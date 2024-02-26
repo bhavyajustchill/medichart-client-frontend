@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const links = navItems();
   return (
-    <div className="w-full navbar bg-neutral text-neutral-content">
+    <div className="w-full navbar bg-neutral text-neutral-content fixed">
       <div className="flex-none lg:hidden">
         <label
           htmlFor="my-drawer-3"
