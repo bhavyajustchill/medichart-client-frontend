@@ -8,9 +8,9 @@ export default function MainLayout() {
   return (
     <div className="drawer h-dvh">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col overflow-auto flex-grow">
+      <div className="drawer-content">
         <Header />
-        <div className="h-full my-1 overflow-y-auto">
+        <div className="h-full my-1 pt-20">
           <Outlet />
         </div>
         <Footer />
