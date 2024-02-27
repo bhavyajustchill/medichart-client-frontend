@@ -1,4 +1,6 @@
 import React from "react";
+import Slider from "../components/slider/Slider";
+
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
         </ul>
       </div>
       <div className="container mx-auto">
-        <div>Open your health account</div>
+        <div><Slider /></div>
         <div>Content</div>
         <div>What do you get with a health account?</div>
       </div>
@@ -106,13 +108,9 @@ export default function Home() {
               <button className="btn btn-outline btn-primary mt-5">UPLOAD NOW!</button>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
       <div className="flex md:flex-row flex-col container mx-auto p-10">
-
-
-
-
 
       </div>
 
@@ -185,6 +183,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          
+      
     </>
   );
 }
