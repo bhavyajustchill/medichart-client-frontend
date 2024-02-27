@@ -8,6 +8,7 @@ import ForDoctors from "./pages/ForDoctors";
 import AuthLayout from "./layouts/AuthLayout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import HealthID from "./pages/HealthID";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="contact" element={<Contact />} index />
           <Route path="about" element={<About />} index />
           <Route path="for-doctors" element={<ForDoctors />} index />
+          <Route path="health-id" element={<HealthID />} index />
         </Route>
         <Route path="/auth" exact element={<AuthLayout />}>
           <Route path="login" index element={<Login />} />
