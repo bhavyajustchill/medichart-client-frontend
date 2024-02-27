@@ -25,6 +25,7 @@ export default function navItems() {
     {
       link: "/",
       label: "For Doctors",
+      type:'ghost',
     },
     {
       label: "ABDM",
@@ -87,10 +88,6 @@ export default function navItems() {
           label: "Carees",
         },
       ]
-    },
-    {
-      link: "/",
-      label: "Doctor Login",
-    },
+    }
   ];
 }
