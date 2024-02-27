@@ -49,7 +49,7 @@ export default function HealthID() {
 
             <div className="flex md:flex-row flex-col mb-4 p-16">
                 <div className="md:w-1/2 ">
-                    <p className='text-4xl font-medium'>Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN</p>
+                    <p className='text-4xl font-medium text-primary'>Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN</p>
 
                     <p className='mt-5 text-xl'>Medi-Chart or Health ID is an initiative of the Indian government under the Medi-Chart Digital Mission (MCDM) for Indian citizens to establish a centralised database of all their health-related data.</p>
 
@@ -68,11 +68,12 @@ export default function HealthID() {
                     </p>
 
                 </div>
-                <div className="md:w-1/2  ">
-                    <div className=" w-full bg-base-100 rounded-xl shadow-xl">
+                <div className="md:w-1/2 ">
+                    <div className=" w-full bg-base-100 rounded-xl shadow-xl h-full">
                         <div className='card-body'>
                             <div className='prose prose-base'>
                                 <h2 className='text-center text-primary'>Create Medical Record</h2>
+                               
                                 <select className="select select-bordered w-full">
                                     <option disabled selected>Type of Record</option>
                                     <option>Lab Report</option>
@@ -104,6 +105,8 @@ export default function HealthID() {
                                     placeholder="Enter tags"
                                 />
                             </div>
+
+                            <button className='btn btn-accent text-white rounded-2xl text-lg'>Submit</button>
                         </div>
                         {/* <div className="card-body">
                             <h2 className="card-title text-center text-4xl">Create Medi-Chart Health Account</h2>
