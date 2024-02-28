@@ -30,14 +30,14 @@ function Capsule() {
     ];
 
     return (
-        <div className="flex md:flex-row flex-col mt-10">
+        <div className="flex md:flex-row flex-col mt-14">
             {data.map((item, index) => (
-                <div key={index} className="card w-84 bg-base-100 shadow-xl mx-2">
-                    <div className="card-body">    
+                <div key={index} className="card w-96 h-20 border bg-base-100 shadow-xl mx-2">
+                    <div className="ps-5 p-2">    
                         <div className='flex items-center'>
-                            <img src={item.img} className='h-20' alt={item.title} />
+                            <img src={item.img} className='h-12' alt={item.title} />
                             <div className="ms-5">
-                                <p className='font-bold text-2xl'>
+                                <p className='font-bold text-xl'>
                                     {item.title}  <br />
                                     <span className='font-normal'>{item.content}</span>
                                 </p>

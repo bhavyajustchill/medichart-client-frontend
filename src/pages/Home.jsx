@@ -13,7 +13,7 @@ export default function Home() {
         </ul>
       </div>
       <div className="container mx-auto">
-        <div><Slider /></div>
+        <div ><Slider /></div>
         <div><Capsule /></div>
         <div className="mt-10"><Healthaccountcard /></div>
       </div>
