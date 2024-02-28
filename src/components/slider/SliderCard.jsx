@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './SliderCard.css'
 
 const SliderCard = () => {
- 
+
     return (
 
         <>
             <div className="w-96 carousel rounded-box">
                 <div className="carousel-item w-full">
-                <div
+                    <div
                         className="card mainCard"
                     >
                         <img
@@ -35,9 +35,9 @@ const SliderCard = () => {
                                 lineHeight: "24px",
                             }}
                         >
-                            <h2>Store your medical records</h2>
+                            <h2>Create/Link Your ABHA</h2>
                             <p className="card-text" style={{ fontSize: "17px" }}>
-                                Started by downloading your covid certificate
+                                to get Started with your Health Account
                             </p>
                             <button
                                 type="button"
@@ -48,14 +48,14 @@ const SliderCard = () => {
                                     height: "20%",
                                 }}
                             >
-                                Create Now &#8594;
+                                Create ABHA &#8594;
                             </button>
                         </div>
                     </div>
                 </div>
-        
+
                 <div className="carousel-item w-full" >
-                <div
+                    <div
                         className="card mainCard"
                     >
                         <img
@@ -95,14 +95,14 @@ const SliderCard = () => {
                                     height: "20%",
                                 }}
                             >
-                                Create Now &#8594;
+                                DOWNLOAD APP &#8594;
                             </button>
                         </div>
                     </div>
                 </div>
-       
+
                 <div className="carousel-item w-full">
-                <div
+                    <div
                         className="card mainCard"
                     >
                         <img
@@ -129,9 +129,9 @@ const SliderCard = () => {
                                 lineHeight: "24px",
                             }}
                         >
-                            <h2>Store your medical records</h2>
+                            <h2>Build Your Health Profile</h2>
                             <p className="card-text" style={{ fontSize: "17px" }}>
-                                Started by downloading your covid certificate
+                                By Updatating Health Vitals Regularly
                             </p>
                             <button
                                 type="button"
@@ -142,13 +142,13 @@ const SliderCard = () => {
                                     height: "20%",
                                 }}
                             >
-                                Create Now &#8594;
+                                CREATE NOW &#8594;
                             </button>
                         </div>
                     </div>
                 </div>
                 <div className="carousel-item w-full">
-                <div
+                    <div
                         className="card mainCard"
                     >
                         <img

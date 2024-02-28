@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "../components/slider/Slider";
+import Capsule from "../components/Capsule/Capsule";
+import Healthaccountcard from "../components/Healthaccountcard";
 
 
 export default function Home() {
@@ -12,8 +14,8 @@ export default function Home() {
       </div>
       <div className="container mx-auto">
         <div><Slider /></div>
-        <div>Content</div>
-        <div>What do you get with a health account?</div>
+        <div><Capsule /></div>
+        <div className="mt-10"><Healthaccountcard /></div>
       </div>
       <div className="bg-gray-100 mt-5">
         <div className="p-8 ">
