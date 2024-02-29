@@ -9,6 +9,8 @@ import AuthLayout from "./layouts/AuthLayout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import HealthID from "./pages/HealthID";
+import MedicalHistory from "./pages/MedicalHistory";
+import MediCard from "./pages/MediCard";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="about" element={<About />} index />
           <Route path="for-doctors" element={<ForDoctors />} index />
           <Route path="health-id" element={<HealthID />} index />
+          <Route path="MedicalHistory" element={<MedicalHistory />} index />
+          <Route path="MediCard" element={<MediCard />} index />
         </Route>
         <Route path="/auth" exact element={<AuthLayout />}>
           <Route path="login" index element={<Login />} />

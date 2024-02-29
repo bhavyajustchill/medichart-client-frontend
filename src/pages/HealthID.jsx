@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 
 export default function HealthID() {
-    // const [activeSection, setActiveSection] = useState('Mobile'); 
-
-    // const handleSectionClick = (section) => {
-    //     setActiveSection(section);
-    // };
+    
 
     const [inputValue, setInputValue] = useState('');
     const [tags, setTags] = useState([]);
@@ -49,26 +45,26 @@ export default function HealthID() {
 
             <div className="flex md:flex-row flex-col mb-4 p-16">
                 <div className="md:w-1/2 ">
-                    <p className='text-4xl font-medium text-primary'>Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN</p>
+                    <p className='md:text-4xl text-2xl font-medium text-primary'>Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN</p>
 
-                    <p className='mt-5 text-xl'>Medi-Chart or Health ID is an initiative of the Indian government under the Medi-Chart Digital Mission (MCDM) for Indian citizens to establish a centralised database of all their health-related data.</p>
+                    <p className='mt-5 md:text-xl text-sm'>Medi-Chart or Health ID is an initiative of the Indian government under the Medi-Chart Digital Mission (MCDM) for Indian citizens to establish a centralised database of all their health-related data.</p>
 
-                    <p className='mt-5 font-medium text-2xl'>It is crucial to remember that</p>
+                    <p className='mt-5 font-medium md:text-2xl text-xl'>It is crucial to remember that</p>
 
-                    <p className='mt-5 text-xl'>
+                    <p className='mt-5 md:text-xl text-sm'>
                         The health records associated with Health IDs or MCDM numbers can only be accessed with the informed consent of the individual.
                     </p>
 
-                    <p className='mt-5 text-xl'>
+                    <p className='mt-5 md:text-xl text-smxl'>
                         People have the option to create an alias, referred to as an "MCDM address" (similar to the email ID xyz@ndhm with a password).
                     </p>
 
-                    <p className='mt-5 text-xl'>
+                    <p className='mt-5 md:text-xl text-smxl'>
                         Highly secure & private, data sharing happens only with the user’s consent
                     </p>
 
                 </div>
-                <div className="md:w-1/2 ">
+                <div className="md:w-1/2 md:mt-0 mt-5">
                     <div className=" w-full bg-base-100 rounded-xl shadow-xl h-full">
                         <div className='card-body'>
                             <div className='prose prose-base'>
@@ -106,7 +102,7 @@ export default function HealthID() {
                                 />
                             </div>
 
-                            <button className='btn btn-accent text-white rounded-2xl text-lg'>Submit</button>
+                            <button className='btn btn-accent text-white rounded-2xl text-lg mt-5'>Submit</button>
                         </div>
                         {/* <div className="card-body">
                             <h2 className="card-title text-center text-4xl">Create Medi-Chart Health Account</h2>
