@@ -85,7 +85,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="w-full xl:w-2/5 pr-4 pl-4 p-0">
-                  <div className="text-start p-6 h-full w-full m-0 flex-shrink-0 flex justify-center items-center">
+                  <div className="text-start   h-full w-full m-0 flex-shrink-0 flex justify-center items-center">
                     <div className="footer-form-card h-full w-full flex-shrink-0">
                       <h5 className="">Contact us</h5>
                       <div className=" mt-3" style={{ fontSize: "14px" }}>
