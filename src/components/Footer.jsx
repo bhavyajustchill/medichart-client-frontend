@@ -1,8 +1,9 @@
 import React from "react";
+import './Footer.css'
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-4 bg-neutral text-neutral-content">
+    <footer className="footer footer-center  bg-neutral text-neutral-content">
       <aside>
         <p>
           Copyright © {new Date().getFullYear()} - All rights reserved |
@@ -10,5 +11,6 @@ export default function Footer() {
         </p>
       </aside>
     </footer>
+
   );
 }
