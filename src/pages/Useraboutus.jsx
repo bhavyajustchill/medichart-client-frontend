@@ -5,8 +5,8 @@ export default function Useraboutus() {
         <>
             {/* <div className='bg-gray-100 mt-8 p-12'>
                 <p className='text-4xl text-center font-bold p-8 '>What our Users said about Us</p>
-                <div class="flex mb-4 justify-center ms-32">
-                    <div class="w-1/3 ">
+                <div className="flex mb-4 justify-center ms-32">
+                    <div className="w-1/3 ">
                         <div className="card w-80 bg-base-100 shadow-2xl">
                             <div className="card-body">
                                 <p className='text-center'>One of the best application to have in your smart device as it keeps all your health records and also helpful to the patient as they gets treatment from best doctor's</p>
@@ -22,7 +22,7 @@ export default function Useraboutus() {
                             <p className='-ms-7'>Medical Records Vault</p>
                             </div>
                     </div>
-                    <div class="w-1/3 -ms-24">
+                    <div className="w-1/3 -ms-24">
                         <div className="card w-96 bg-base-100 shadow-2xl">
                             <div className="card-body">
                                 <p className='text-center'>One of the most convenient apps, I came across for doctor consultation in these tough times. I logged and showed interest for a consultation. It immediately blocked a slot for me with an excellent doctor available in next 10 mins and the entire experience is quite seamless. Thanks for helping in such times! 🙏🏻</p>
@@ -36,7 +36,7 @@ export default function Useraboutus() {
                             <p className='ms-2'>Doctor Consultation</p>
                             </div>
                     </div>
-                    <div class="w-1/3 -ms-8">
+                    <div className="w-1/3 -ms-8">
                         <div className="card w-80 bg-base-100 shadow-2xl">
                             <div className="card-body">
                                 <p className='text-center'>'Best pulse rate checking app ever. It showed exactly same reading as my smart watch with just the camera 2/3 reading was exactly precise like a 3k worth watch... Loved the app and the function'</p>
