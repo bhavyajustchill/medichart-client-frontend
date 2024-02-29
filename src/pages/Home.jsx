@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from 'react';
 import Slider from "../components/slider/Slider";
 import Capsule from "../components/Capsule/Capsule";
 import Healthaccountcard from "../components/Healthaccountcard";
+import Medicalrecord from './Medicalrecord';
+import Useraboutus from './Useraboutus';
+import News from './News';
+import Mission from './Mission';
 
 
 export default function Home() {
+  const [imageSrc, setImageSrc] = useState('/assets/image12.jpg');
+  const changeImage = (newSrc) => {
+    setImageSrc(newSrc);
+  };
   return (
     <>
       <div className="text-sm breadcrumbs bg-[#F1F1FF] -mt-20">
@@ -25,13 +33,15 @@ export default function Home() {
                 <div className="md:w-1/2">
                   <p className="md:text-4xl text-md font-bold text-center">Participate in india's Healthcare Revolution</p>
                   <p className="md:text-lg text-xs md:mt-7 mt-5 md:text-start text-center">Create ABHA & store all your medical records with Eka care (Govt of India ABDM approved PHR app)</p>
-                  <button className="btn btn-primary md:mt-7 mt-5 md:ms-0 ms-48">CREATE ABHA</button>
-                  <div className="flex md:flex-row flex-col mt-7">
-                    <div className="md:w-1/2 ">
-                      <p className="md:text-md text-xs md:text-start text-center">16 Lakh+ ABHA Created</p>
+                  <button className="btn btn-primary md:mt-7 mt-5 md:ms-0 ms-40">CREATE ABHA</button>
+                  <div className="flex md:flex-row flex-col md:mt-10 mt-5">
+                    <div className="md:w-1/2 flex md:ms-0 ms-36 ">
+                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6"><path d="M18.75 21.623H5.25a.75.75 0 01-.75-.75v-16.5a.75.75 0 01.75-.75h9l5.25 5.25v12a.75.75 0 01-.75.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.25 3.623v5.25h5.25M9.375 15.248L12 17.873l2.625-2.625M12 11.873v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      <p className="md:text-md text-xs md:text-start mt-1">16 Lakh+ ABHA Created</p>
                     </div>
-                    <div className="md:w-1/2 ">
-                      <p className="md:text-md text-xs text-center">Official partner of Government of India</p>
+                    <div className="md:w-1/2 flex md:ms-0 ms-28">
+                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6"><path d="M20.25 5.123H3.75a.75.75 0 00-.75.75v13.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-13.5a.75.75 0 00-.75-.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.737 13.362a.75.75 0 000 1.5v-1.5zm10.5 1.5a.75.75 0 100-1.5v1.5zm-10.5 0h10.5v-1.5h-10.5v1.5zM5.737 16.362a.75.75 0 000 1.5v-1.5zm6 1.5a.75.75 0 100-1.5v1.5zm-6 0h6v-1.5h-6v1.5z" fill="currentColor"></path><circle cx="7.133" cy="8.941" r="1.867" fill="currentColor"></circle></svg>
+                      <p className="md:text-md text-xs mt-1">Official partner of Government of India</p>
                     </div>
                   </div>
                 </div>
@@ -44,40 +54,51 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-green-100 text-center container mx-auto rounded-md mt-8 w-64">
-        <p className="md:text-md text-sm">YOUR SMART HEALTH LOCKER</p>
-      </div>
-      <p className="md:mt-6 mt-2 font-bold md:text-4xl text-2xl ms-auto text-center">Never lose a medical record again</p>
-      <p className="md:mt-6 mt-2 ms-auto text-center md:text-md text-sm ">Store, search and organise all medical records as per your convenience</p>
+      <div>
+        <div className="bg-green-100 text-center container mx-auto rounded-md mt-8 w-64">
+          <p className="md:text-md text-sm">YOUR SMART HEALTH LOCKER</p>
+        </div>
+        <p className="md:mt-6 mt-2 font-bold md:text-4xl text-2xl ms-auto text-center">Never lose a medical record again</p>
+        <p className="md:mt-6 mt-2 ms-auto text-center md:text-md text-sm ">Store, search and organise all medical records as per your convenience</p>
 
-      <div className="flex md:flex-row flex-col mb-4 mt-8 container mx-auto">
-        <div className="md:w-1/2 ">
-          <div className="flex mt-5">
-            <img src="/assets/cl5c2clg0001p0tchfaerew42.png" className="ms-12 md:w-14 md:h-14 h-10" />
-            <p className="ms-4 md:text-lg text-sm">Store</p>
-            <div>
-              <p className="mt-8 md:text-md text-sm md:-ms-10 -ms-10">Eka’s integrated approach allows you to fetch medical records from hospitals, labs, doctors and even your email!</p>
-              <button className="btn btn-outline btn-primary md:mt-8 mt-3 w-24 -ms-10">Try Now</button>
+        <div className="flex md:flex-row flex-col mb-4 mt-8 container mx-auto">
+          <div className="md:w-1/2 ">
+            <div className="flex mt-5" onClick={() => changeImage('/assets/cl5i49ojv000l0sh9gxwr32fp.png')}>
+              <img src="/assets/cl5c2clg0001p0tchfaerew42.png" className="ms-12 md:w-14 md:h-14 h-10" alt="Store" />
+              <p className="ms-4 md:text-lg text-sm font-medium">Store</p>
+              <div>
+                <p className="mt-8 md:text-md text-sm md:-ms-10 -ms-10">Eka’s integrated approach allows you to fetch medical records from hospitals, labs, doctors and even your email!</p>
+                <button className="btn btn-outline btn-primary md:mt-8 mt-3 w-24 -ms-10">Try Now</button>
+              </div>
+            </div>
+
+            <div className="flex mt-7" onClick={() => changeImage('/assets/cl5i4b39n000x0shh4cldhaqn.png')}>
+              <img src="/assets/cl5c2dcnm001r0tchau7r8632.png" className="ms-12 md:w-14 md:h-14 h-10" alt="Search" />
+              <p className="ms-4 md:text-lg text-sm font-medium">Search</p>
+              <div>
+                <p className="mt-8 md:text-md text-sm md:-ms-14 -ms-10"> Search records using vitals name, diseases & more</p>
+                <button className="btn btn-outline btn-primary md:mt-8 mt-3 w-24 md:-ms-14 -ms-12">Try Now</button>
+              </div>
+
+            </div>
+
+            <div className="flex mt-7" onClick={() => changeImage('/assets/cl5i4bgdo000n0sh9hl9365uk.png')}>
+              <img src="/assets/cl5c2efv5001t0tch0sbxczup.png" className="ms-12 md:w-14 md:h-14 h-10" alt="Organise" />
+              <p className="ms-4 md:text-lg text-sm font-medium">Organise</p>
+              <div>
+                <p className="mt-8 md:text-md text-sm md:-ms-16 -ms-14"> Search records using vitals name, diseases & more</p>
+                <button className="btn btn-outline btn-primary md:mt-8 mt-3 w-24 md:-ms-20 -ms-16">Try Now</button>
+              </div>
             </div>
           </div>
 
-          <div className="flex mt-7">
-            <img src="/assets/cl5c2dcnm001r0tchau7r8632.png" className="ms-12 md:w-14 md:h-14 h-10" />
-            <p className="ms-4 md:text-lg text-sm">Search</p>
+          <div className="md:w-1/2 flex md:justify-end justify-center md:items-end items-center ">
+            <img src={imageSrc} className="w-96" alt="Displayed" />
           </div>
-
-          <div className="flex mt-7">
-            <img src="/assets/cl5c2efv5001t0tch0sbxczup.png" className="ms-12 md:w-14 md:h-14 h-10" />
-            <p className="ms-4 md:text-lg text-sm">Organise</p>
-          </div>
-        </div>
-
-        <div className="md:w-1/2 flex md:justify-end justify-center md:items-end items-center ">
-          <img src="/assets/image12.jpg" className="w-96 " />
         </div>
       </div>
 
-      <div className="flex md:flex-row flex-col container mx-auto">
+      <div className="flex md:flex-row flex-col container mx-auto mt-14">
         <div className="md:w-1/3 flex  md:justify-start justify-center items-center">
           <div className="card w-96 bg-base-100 shadow-2xl">
             <div className="card-body">
@@ -110,7 +131,7 @@ export default function Home() {
               <button className="btn btn-outline btn-primary mt-5">UPLOAD NOW!</button>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
       <div className="flex md:flex-row flex-col container mx-auto p-10">
 
@@ -124,13 +145,15 @@ export default function Home() {
                 <div className="md:w-1/2">
                   <p className="md:text-4xl text-lg font-bold md:text-start text-center">Download CoWin Vaccine Certificate</p>
                   <p className="md:text-lg text-xs md:mt-7 mt-3 md:text-start text-center">Using only your mobile number</p>
-                  <button className="bg-[#104751] rounded-lg text-white w-52 h-12 md:mt-7 mt-5  md:ms-0 ms-32">DOWNLOAD CERTIFICATE</button>
-                  <div className="flex md:flex-row flex-col mt-7">
-                    <div className="md:w-1/2 ">
-                      <p className="md:text-md text-xs md:text-start text-center">Change Mobile Number on Certificate</p>
+                  <button className="bg-[#104751] rounded-lg text-white w-52 h-12 md:mt-7 mt-5  md:ms-0 ms-28">DOWNLOAD CERTIFICATE</button>
+                  <div className="flex md:flex-row flex-col md:mt-10 mt-5">
+                    <div className="md:w-1/2 flex md:ms-0 ms-28 ">
+                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6"><path d="M18.75 21.623H5.25a.75.75 0 01-.75-.75v-16.5a.75.75 0 01.75-.75h9l5.25 5.25v12a.75.75 0 01-.75.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.25 3.623v5.25h5.25M9.375 15.248L12 17.873l2.625-2.625M12 11.873v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      <p className="md:text-md text-xs md:text-start mt-1">Change Mobile Number on Certificate</p>
                     </div>
-                    <div className="md:w-1/2 ">
-                      <p className="md:text-md text-xs text-center md:mt-0 mt-2">Add Passport Number on Certificate</p>
+                    <div className="md:w-1/2 flex md:ms-0 ms-28">
+                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6"><path d="M20.25 5.123H3.75a.75.75 0 00-.75.75v13.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-13.5a.75.75 0 00-.75-.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.737 13.362a.75.75 0 000 1.5v-1.5zm10.5 1.5a.75.75 0 100-1.5v1.5zm-10.5 0h10.5v-1.5h-10.5v1.5zM5.737 16.362a.75.75 0 000 1.5v-1.5zm6 1.5a.75.75 0 100-1.5v1.5zm-6 0h6v-1.5h-6v1.5z" fill="currentColor"></path><circle cx="7.133" cy="8.941" r="1.867" fill="currentColor"></circle></svg>
+                      <p className="md:text-md text-xs mt-1">Add Passport Number on Certificate</p>
                     </div>
                   </div>
                 </div>
@@ -166,28 +189,31 @@ export default function Home() {
           <button className="bg-[#6567EC] rounded-md w-64 font-bold h-12 text-white mt-8 ">UPLOAD A LAB REPORT  NOW</button>
         </div>
         <div className="md:w-1/2  flex md:justify-end justify-center md:items-end items-center">
-          <img src="/assets/cl5iahwbg000v0sh9dihle57k.png"/>
+          <img src="/assets/cl5iahwbg000v0sh9dihle57k.png" />
         </div>
       </div>
 
-        <div className="card lg:card-side bg-[#5C7AFF] shadow-xl container mx-auto ">
-            <div className="card-body">
-              <div className="flex md:flex-row flex-col">
-                <div className="md:w-1/2 p-4">
-                  <p className="md:text-5xl text-xl font-bold md:text-start text-center text-white">Are you a doctor?</p>
-                  <p className="md:text-lg text-xs md:mt-12 mt-4 md:text-start text-center text-white">Your patient’s health profile will be automatically synced in Eka’s ABDM </p>
-                  <p className="md:text-lg text-xs md:text-start text-center text-white">compliant EMR</p>
-                  <button className="bg-[#17185A] rounded-lg text-white w-52 h-12 md:mt-9 mt-5  md:ms-0 ms-36">CONTACT US</button>
-                </div>
-                <div className="md:w-1/2 flex justify-end items-end">
-                  <img className="h-auto md:max-w-96" src="/assets/cl5i3f7rx000h0sh99fy5fs3q.png" />
-                </div>
-              </div>
+      <div className="card lg:card-side bg-[#5C7AFF] shadow-xl container mx-auto ">
+        <div className="card-body">
+          <div className="flex md:flex-row flex-col">
+            <div className="md:w-1/2 p-4">
+              <p className="md:text-5xl text-xl font-bold md:text-start text-center text-white">Are you a doctor?</p>
+              <p className="md:text-lg text-xs md:mt-12 mt-4 md:text-start text-center text-white">Your patient’s health profile will be automatically synced in Eka’s ABDM </p>
+              <p className="md:text-lg text-xs md:text-start text-center text-white">compliant EMR</p>
+              <button className="bg-[#17185A] rounded-lg text-white w-52 h-12 md:mt-9 mt-5  md:ms-0 ms-36">CONTACT US</button>
+            </div>
+            <div className="md:w-1/2 flex justify-end items-end">
+              <img className="h-auto md:max-w-96" src="/assets/cl5i3f7rx000h0sh99fy5fs3q.png" />
             </div>
           </div>
+        </div>
+      </div>
 
-          
-      
+<Medicalrecord />
+<Useraboutus />
+
+<News />
+<Mission />
     </>
   );
 }

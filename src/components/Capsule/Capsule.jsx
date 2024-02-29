@@ -30,9 +30,9 @@ function Capsule() {
     ];
 
     return (
-        <div className="flex md:flex-row flex-col mt-14">
+        <div className="flex md:flex-row flex-col mt-14 md:justify-normal justify-center items-center">
             {data.map((item, index) => (
-                <div key={index} className="card w-96 h-20 border bg-base-100 shadow-xl mx-2">
+                <div key={index} className="card w-96 h-20 border bg-base-100 shadow-xl mx-2 md:mt-0 mt-5">
                     <div className="ps-5 p-2">    
                         <div className='flex items-center'>
                             <img src={item.img} className='h-12' alt={item.title} />
