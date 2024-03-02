@@ -253,7 +253,7 @@ export default function ForDoctors() {
         </div>
       </div>
 
-      {/* <div>
+      <div>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <div className='bg-[#FFF5DB] w-full '>
@@ -376,7 +376,7 @@ export default function ForDoctors() {
           </div>
         </div>
       </div>
-    </div> */}
+    </div>
 
     </>
   )
