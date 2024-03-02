@@ -89,8 +89,14 @@ export default function Header() {
           ))}
           <li>
             <div>
-              <button className="btn btn-outline btn-primary -mt-4 ">
-                Doctor Login
+              <button
+                onClick={() => {
+                  localStorage.clear();
+                  navigate("/auth/login");
+                }}
+                className="btn btn-outline text-error-content btn-error -mt-4"
+              >
+                Logout
               </button>
             </div>
           </li>
