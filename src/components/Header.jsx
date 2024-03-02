@@ -1,13 +1,23 @@
-
-
-
-import React from "react";
+import React, { useEffect } from "react";
 import navItems from "../helpers/navItems";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
-  const links = navItems();
+  const navigate = useNavigate();
+  const redirectToLogin = () => {
+    if (
+      !localStorage.getItem("userData") &&
+      !localStorage.getItem("jwtToken")
+    ) {
+      navigate("/auth/login");
+    }
+  };
 
+  useEffect(() => {
+    redirectToLogin();
+  }, []);
+
+  const links = navItems();
 
   const renderSubItems = (subItems) => {
     return (
@@ -47,13 +57,14 @@ export default function Header() {
         </label>
       </div>
       <Link to="/" className="flex justify-center items-center px-2 mx-2">
-        <b className="text-2xl"><img src="./assets/L1.png" className="w-44"/></b>
+        <b className="text-2xl">
+          <img src="./assets/L1.png" className="w-44" />
+        </b>
       </Link>
       <div className="flex-1 justify-center items-center hidden lg:block ">
         <ul className="menu menu-horizontal flex justify-center mt-5 font-bold">
           {links.map((navItem, index) => (
             <li key={index}>
-
               {navItem.subItems ? (
                 <details>
                   <summary>
@@ -65,25 +76,22 @@ export default function Header() {
                     {renderSubItems(navItem.subItems)}
                   </ul>
                 </details>
+              ) : navItem.type && navItem.type === "ghost" ? (
+                <button className="  btn-sm">
+                  <Link to={navItem.link}>{navItem.label}</Link>
+                </button>
               ) : (
-                navItem.type && navItem.type === 'ghost' ? (<button className="  btn-sm">
-                  <Link to={navItem.link}>
-                    {navItem.label}
-                  </Link>
-                </button>) :
-                  <button className="btn btn-primary btn-sm">
-                    <Link to={navItem.link}>
-                      {navItem.label}
-                    </Link>
-                  </button>
-              )
-              }
+                <button className="btn btn-primary btn-sm">
+                  <Link to={navItem.link}>{navItem.label}</Link>
+                </button>
+              )}
             </li>
-
           ))}
           <li>
             <div>
-              <button className="btn btn-outline btn-primary -mt-4 ">Doctor Login</button>
+              <button className="btn btn-outline btn-primary -mt-4 ">
+                Doctor Login
+              </button>
             </div>
           </li>
         </ul>
@@ -91,4 +99,3 @@ export default function Header() {
     </div>
   );
 }
-
