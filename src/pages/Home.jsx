@@ -31,16 +31,18 @@ export default function Home() {
             <div className="card-body">
               <div className="flex md:flex-row flex-col">
                 <div className="md:w-1/2">
-                  <p className="md:text-4xl text-md font-bold text-center">Participate in india's Healthcare Revolution</p>
+                  <p className="md:text-4xl text-md font-bold ">Participate in india's Healthcare Revolution</p>
                   <p className="md:text-lg text-xs md:mt-7 mt-5 md:text-start text-center">Create ABHA & store all your medical records with Eka care (Govt of India ABDM approved PHR app)</p>
-                  <button className="btn btn-primary md:mt-7 mt-5 md:ms-0 ms-52">CREATE ABHA</button>
-                  <div className="flex md:flex-row flex-col md:mt-10 mt-5">
-                    <div className="md:w-1/2 flex md:ms-0 ms-48 ">
-                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M18.75 21.623H5.25a.75.75 0 01-.75-.75v-16.5a.75.75 0 01.75-.75h9l5.25 5.25v12a.75.75 0 01-.75.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.25 3.623v5.25h5.25M9.375 15.248L12 17.873l2.625-2.625M12 11.873v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <div className='flex md:justify-start  justify-center md:items-start items-center'>
+                  <button className="btn btn-primary md:mt-7 mt-5">CREATE ABHA</button>
+                  </div>
+                  <div className="flex md:flex-row flex-col md:mt-10 mt-5 md:justify-start justify-center md:items-start items-center">
+                    <div className="md:w-1/2 flex ">
+                      <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M18.75 21.623H5.25a.75.75 0 01-.75-.75v-16.5a.75.75 0 01.75-.75h9l5.25 5.25v12a.75.75 0 01-.75.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.25 3.623v5.25h5.25M9.375 15.248L12 17.873l2.625-2.625M12 11.873v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                       <p className="md:text-md text-xs md:text-start mt-1">16 Lakh+ ABHA Created</p>
                     </div>
-                    <div className="md:w-1/2 flex md:ms-0 ms-40">
-                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M20.25 5.123H3.75a.75.75 0 00-.75.75v13.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-13.5a.75.75 0 00-.75-.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.737 13.362a.75.75 0 000 1.5v-1.5zm10.5 1.5a.75.75 0 100-1.5v1.5zm-10.5 0h10.5v-1.5h-10.5v1.5zM5.737 16.362a.75.75 0 000 1.5v-1.5zm6 1.5a.75.75 0 100-1.5v1.5zm-6 0h6v-1.5h-6v1.5z" fill="currentColor"></path><circle cx="7.133" cy="8.941" r="1.867" fill="currentColor"></circle></svg>
+                    <div className="md:w-1/2 flex md:justify-start justify-center md:items-start items-center">
+                      <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M20.25 5.123H3.75a.75.75 0 00-.75.75v13.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-13.5a.75.75 0 00-.75-.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.737 13.362a.75.75 0 000 1.5v-1.5zm10.5 1.5a.75.75 0 100-1.5v1.5zm-10.5 0h10.5v-1.5h-10.5v1.5zM5.737 16.362a.75.75 0 000 1.5v-1.5zm6 1.5a.75.75 0 100-1.5v1.5zm-6 0h6v-1.5h-6v1.5z" fill="currentColor"></path><circle cx="7.133" cy="8.941" r="1.867" fill="currentColor"></circle></svg>
                       <p className="md:text-md text-xs mt-1">Official partner of Government of India</p>
                     </div>
                   </div>
@@ -145,14 +147,17 @@ export default function Home() {
                 <div className="md:w-1/2">
                   <p className="md:text-4xl text-lg font-bold md:text-start text-center">Download CoWin Vaccine Certificate</p>
                   <p className="md:text-lg text-xs md:mt-7 mt-3 md:text-start text-center">Using only your mobile number</p>
-                  <button className="bg-[#104751] rounded-lg text-white w-52 h-12 md:mt-7 mt-5  md:ms-0 ms-36">DOWNLOAD CERTIFICATE</button>
-                  <div className="flex md:flex-row flex-col md:mt-10 mt-5">
+                  <div className='flex md:justify-start justify-center'>
+                    <button className="bg-[#104751] rounded-lg text-white w-52 h-12 md:mt-7 mt-5  md:ms-0 ">DOWNLOAD CERTIFICATE</button>
+                  </div>
+
+                  <div className="flex md:flex-row flex-col md:mt-10 mt-5 md:text-start justify-center">
                     <div className="md:w-1/2 flex md:ms-0 ms-32 ">
-                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M18.75 21.623H5.25a.75.75 0 01-.75-.75v-16.5a.75.75 0 01.75-.75h9l5.25 5.25v12a.75.75 0 01-.75.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.25 3.623v5.25h5.25M9.375 15.248L12 17.873l2.625-2.625M12 11.873v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                      <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M18.75 21.623H5.25a.75.75 0 01-.75-.75v-16.5a.75.75 0 01.75-.75h9l5.25 5.25v12a.75.75 0 01-.75.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.25 3.623v5.25h5.25M9.375 15.248L12 17.873l2.625-2.625M12 11.873v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                       <p className="md:text-md text-xs md:text-start mt-1">Change Mobile Number on Certificate</p>
                     </div>
                     <div className="md:w-1/2 flex md:ms-0 ms-32">
-                    <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M20.25 5.123H3.75a.75.75 0 00-.75.75v13.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-13.5a.75.75 0 00-.75-.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.737 13.362a.75.75 0 000 1.5v-1.5zm10.5 1.5a.75.75 0 100-1.5v1.5zm-10.5 0h10.5v-1.5h-10.5v1.5zM5.737 16.362a.75.75 0 000 1.5v-1.5zm6 1.5a.75.75 0 100-1.5v1.5zm-6 0h6v-1.5h-6v1.5z" fill="currentColor"></path><circle cx="7.133" cy="8.941" r="1.867" fill="currentColor"></circle></svg>
+                      <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:w-6 md:h-6"><path d="M20.25 5.123H3.75a.75.75 0 00-.75.75v13.5c0 .414.336.75.75.75h16.5a.75.75 0 00.75-.75v-13.5a.75.75 0 00-.75-.75z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.737 13.362a.75.75 0 000 1.5v-1.5zm10.5 1.5a.75.75 0 100-1.5v1.5zm-10.5 0h10.5v-1.5h-10.5v1.5zM5.737 16.362a.75.75 0 000 1.5v-1.5zm6 1.5a.75.75 0 100-1.5v1.5zm-6 0h6v-1.5h-6v1.5z" fill="currentColor"></path><circle cx="7.133" cy="8.941" r="1.867" fill="currentColor"></circle></svg>
                       <p className="md:text-md text-xs mt-1">Add Passport Number on Certificate</p>
                     </div>
                   </div>
@@ -209,11 +214,11 @@ export default function Home() {
         </div>
       </div>
 
-<Medicalrecord />
-<Useraboutus />
+      <Medicalrecord />
+      <Useraboutus />
 
-<News />
-<Mission />
+      <News />
+      <Mission />
     </>
   );
 }
