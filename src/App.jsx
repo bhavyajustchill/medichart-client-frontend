@@ -11,10 +11,11 @@ import Register from "./pages/Register";
 import HealthID from "./pages/HealthID";
 import MedicalHistory from "./pages/MedicalHistory";
 import MediCard from "./pages/MediCard";
+import React from "react";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>    <BrowserRouter>
       <Routes>
         <Route path="/" exact element={<MainLayout />}>
           <Route element={<Home />} index />
@@ -31,6 +32,8 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </>
+
   );
 }
 
