@@ -50,11 +50,11 @@ export default function Home() {
                     Create MCHA & store all your medical records with MediCard
                     (Govt of India MCHA approved PHR app)
                   </p>
-                  <button className="btn btn-primary md:mt-7 mt-5 md:ms-0 ms-40">
+                  <button className="btn btn-primary md:mt-7 mt-5 md:ms-0 ms-48">
                     CREATE MCHA
                   </button>
                   <div className="flex md:flex-row flex-col md:mt-10 mt-5">
-                    <div className="md:w-1/2 flex md:ms-0 ms-36 ">
+                    <div className="md:w-1/2 flex md:ms-0 ms-44 ">
                       <svg
                         viewBox="0 0 24 25"
                         fill="none"
@@ -76,11 +76,11 @@ export default function Home() {
                           stroke-linejoin="round"
                         ></path>
                       </svg>
-                      <p className="md:text-md text-xs md:text-start mt-1">
+                      <p className="md:text-md text-xs md:text-start mt-1 ">
                         16 Lakh+ MCHA Created
                       </p>
                     </div>
-                    <div className="md:w-1/2 flex md:ms-0 ms-28">
+                    <div className="md:w-1/2 flex md:ms-0 ms-32">
                       <svg
                         viewBox="0 0 24 25"
                         fill="none"
@@ -277,11 +277,11 @@ export default function Home() {
                   <p className="md:text-lg text-xs md:mt-7 mt-3 md:text-start text-center">
                     Using only your mobile number
                   </p>
-                  <button className="bg-[#104751] rounded-lg text-white w-52 h-12 md:mt-7 mt-5  md:ms-0 ms-28">
+                  <button className="bg-[#104751] rounded-lg text-white w-52 h-12 md:mt-7 mt-5  md:ms-0 ms-36">
                     Download Records
                   </button>
                   <div className="flex md:flex-row flex-col md:mt-10 mt-5">
-                    <div className="md:w-1/2 flex md:ms-0 ms-28 ">
+                    <div className="md:w-1/2 flex md:ms-0 ms-32 ">
                       <svg
                         viewBox="0 0 24 25"
                         fill="none"
@@ -307,7 +307,7 @@ export default function Home() {
                         Change Mobile Number on Certificate
                       </p>
                     </div>
-                    <div className="md:w-1/2 flex md:ms-0 ms-28">
+                    <div className="md:w-1/2 flex md:ms-0 ms-32">
                       <svg
                         viewBox="0 0 24 25"
                         fill="none"

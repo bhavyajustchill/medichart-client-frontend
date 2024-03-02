@@ -8,8 +8,8 @@ import SliderCard from "./SliderCard";
 const Slider = () => {
     return (
         <>
-            <div className="w-full h-auto mt-5" style={{zIndex:'-1'}}>
-                <div className="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300" style={{ borderRadius: "24px" }}>
+            <div className="w-full h-auto mt-5" >
+                <div className="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300" style={{ borderRadius: "24px",zIndex:'-1' }}>
                     <div
                         className="flex-auto p-6 text-white flex flex-wrap justify-center items-center"
                         style={{ borderRadius: "24px", fontFamily: "DM Sans, sans-serif", backgroundColor: "#429CA5", }} >
