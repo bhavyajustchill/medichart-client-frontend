@@ -21,7 +21,7 @@ const footerCardData = [
     title: "Products",
     list: [
       { label: "For Doctors", link: "#" },
-      { label: "Eka EMR", link: "#" },
+      { label: "MediCard EMR", link: "#" },
       { label: "GMB For Doctors", link: "#" },
       { label: "EMR for Neurologists", link: "#" },
     ],
@@ -36,14 +36,14 @@ const footerCardData = [
     ],
   },
   {
-    title: "ABDM",
+    title: "MCHA",
     list: [{ label: "Create MCHA", link: "#" }],
   },
   {
     title: "About Us",
     list: [
       { label: "Team", link: "#" },
-      { label: "Eka Stories", link: "#" },
+      { label: "MediCard Stories", link: "#" },
     ],
   },
 ];
@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="footer-container-main h-full w-full text-white flex flex-col md:pt-12">
           <div className="footer-container h-full container mx-auto sm:px-4 flex flex-col">
             <div className="w-full md:hidden pt-4 flex justify-center items-center">
-              <img src="../../Footer/assets/facebook.svg" alt="medichart" />
+              <img src="../../Footer/assets/facebook.svg" alt="MediCard" />
             </div>
             <div className="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 w-full overflow-hidden p-0 text-center flex-grow-1 flex justify-center items-center">
               <div className="flex flex-wrap  h-full w-full">
@@ -152,7 +152,7 @@ const Footer = () => {
                         }}
                         disabled
                       >
-                        Contact to medichart
+                        Contact to MediCard
                       </button>
                     </div>
                   </div>
@@ -162,7 +162,7 @@ const Footer = () => {
             <div className="footer-line hidden lg:block "></div>
             <div className="footer-navigation flex flex-col md:flex-row">
               <div className="order-2 md:order-1 h-full flex justify-center items-center footer-navigation-copyright w-full flex justify-center text-center">
-                Copyright © 2023 medichart.com
+                Copyright © 2023 MediCard.com
               </div>
               <div className="order-1 md:order-2 h-full flex justify-center items-center flex justify-content-rig md:me-4">
                 <div className="flex">

@@ -5,17 +5,17 @@ function Capsule() {
         {
             img: "./assets/cl5hrkuyu000j0shh6f9ed48u.png",
             title: "30 Lakh+",
-            content: "Downloads",
+            content: "Users",
         },
         {
             img: "./assets/cl5c2clg0001p0tchfaerew42.png",
             title: "50 Lakh+",
-            content: "Vitals Stored",
+            content: "Vitals Records",
         },
         {
             img: "./assets/cl5hrmybd000l0shhhk5hdvx0.png",
             title: "10 Lakh+",
-            content: "Prescriptions",
+            content: "Medical Records",
         },
         {
             img: "./assets/cl5hrpdro000p0shh2j0b4q83.png",

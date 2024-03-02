@@ -1,110 +1,139 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function HealthID() {
-    
+  const [inputValue, setInputValue] = useState("");
+  const [tags, setTags] = useState([]);
 
-    const [inputValue, setInputValue] = useState('');
-    const [tags, setTags] = useState([]);
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
 
-    const handleInputChange = (e) => {
-        setInputValue(e.target.value);
-    };
+  const handleInputKeyPress = (e) => {
+    if (e.key === "Enter" || e.key === ",") {
+      e.preventDefault();
+      addTag();
+    }
+  };
 
-    const handleInputKeyPress = (e) => {
-        if (e.key === 'Enter' || e.key === ',') {
-            e.preventDefault();
-            addTag();
-        }
-    };
+  const addTag = () => {
+    const trimmedValue = inputValue.trim();
+    if (trimmedValue !== "" && !tags.includes(trimmedValue)) {
+      setTags([...tags, trimmedValue]);
+      setInputValue("");
+    }
+  };
 
-    const addTag = () => {
-        const trimmedValue = inputValue.trim();
-        if (trimmedValue !== '' && !tags.includes(trimmedValue)) {
-            setTags([...tags, trimmedValue]);
-            setInputValue('');
-        }
-    };
+  const removeTag = (tag) => {
+    setTags(tags.filter((t) => t !== tag));
+  };
 
-    const removeTag = (tag) => {
-        setTags(tags.filter((t) => t !== tag));
-    };
+  return (
+    <>
+      <div className="text-sm breadcrumbs bg-[#F1F1FF] flex">
+        <ul className="md:ms-12 ms-5 md:text-sm text-xs">
+          <li>
+            <a href="/" className="text-[#7265E3]">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/" className="text-[#7265E3]">
+              MCHA
+            </a>
+          </li>
+          <li>Create Medi-Chart Health ID</li>
+        </ul>
+        <ul className="flex-1 justify-end text-[#AFB1C9] md:text-sm text-xs">
+          Last Updated ON:{" "}
+          <span className="text-[#4C5980] font-bold">26 FEB, 2024</span>
+        </ul>
+      </div>
 
+      <div className="flex md:flex-row flex-col mb-4 p-16">
+        <div className="md:w-1/2 ">
+          <p className="md:text-4xl text-2xl font-medium text-primary">
+            Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN
+          </p>
 
-    return (
-        <>
-            <div className="text-sm breadcrumbs bg-[#F1F1FF] flex">
-                <ul className="md:ms-12 ms-5 md:text-sm text-xs">
-                    <li><a href='/' className='text-[#7265E3]'>Home</a></li>
-                    <li><a href='/' className='text-[#7265E3]'>ABDM</a></li>
-                    <li>Create Medi-Chart Health ID</li>
+          <p className="mt-5 md:text-xl text-sm">
+            Medi-Chart or Health ID is an initiative of the Indian government
+            under the Medi-Chart Digital Mission (MCDM) for Indian citizens to
+            establish a centralised database of all their health-related data.
+          </p>
 
+          <p className="mt-5 font-medium md:text-2xl text-xl">
+            It is crucial to remember that
+          </p>
 
-                </ul>
-                <ul className='flex-1 justify-end text-[#AFB1C9] md:text-sm text-xs'>Last Updated ON: <span className='text-[#4C5980] font-bold'>26 FEB, 2024</span></ul>
+          <p className="mt-5 md:text-xl text-sm">
+            The health records associated with Health IDs or MCDM numbers can
+            only be accessed with the informed consent of the individual.
+          </p>
+
+          <p className="mt-5 md:text-xl text-smxl">
+            People have the option to create an alias, referred to as an "MCDM
+            address" (similar to the email ID xyz@ndhm with a password).
+          </p>
+
+          <p className="mt-5 md:text-xl text-smxl">
+            Highly secure & private, data sharing happens only with the user’s
+            consent
+          </p>
+        </div>
+        <div className="md:w-1/2 md:mt-0 mt-5">
+          <div className=" w-full bg-base-100 rounded-xl shadow-xl h-full">
+            <div className="card-body">
+              <div className="prose prose-base">
+                <h2 className="text-center text-primary">
+                  Create Medical Record
+                </h2>
+
+                <select className="select select-bordered w-full">
+                  <option disabled selected>
+                    Type of Record
+                  </option>
+                  <option>Lab Report</option>
+                  <option>Prescription</option>
+                  <option>Scan</option>
+                  <option>Discharge Summary</option>
+                  <option>Vacine Certificat</option>
+                  <option>Insurance</option>
+                  <option>Invoice</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <input
+                type="date"
+                placeholder="Type here"
+                className="input w-full border border-gray-300"
+              />
+
+              <div className="flex flex-wrap gap-2 ">
+                {tags.map((tag, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-200 rounded-full px-3 py-1 flex items-center"
+                  >
+                    <span className="text-gray-800 mr-1">{tag}</span>
+                    <button onClick={() => removeTag(tag)}>&times;</button>
+                  </div>
+                ))}
+                <input
+                  type="text"
+                  value={inputValue}
+                  onChange={handleInputChange}
+                  onKeyPress={handleInputKeyPress}
+                  className="border border-gray-300 input rounded w-full "
+                  placeholder="Enter tags"
+                />
+              </div>
+
+              <button className="btn btn-accent text-white rounded-2xl text-lg mt-5">
+                Submit
+              </button>
             </div>
-
-            <div className="flex md:flex-row flex-col mb-4 p-16">
-                <div className="md:w-1/2 ">
-                    <p className='md:text-4xl text-2xl font-medium text-primary'>Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN</p>
-
-                    <p className='mt-5 md:text-xl text-sm'>Medi-Chart or Health ID is an initiative of the Indian government under the Medi-Chart Digital Mission (MCDM) for Indian citizens to establish a centralised database of all their health-related data.</p>
-
-                    <p className='mt-5 font-medium md:text-2xl text-xl'>It is crucial to remember that</p>
-
-                    <p className='mt-5 md:text-xl text-sm'>
-                        The health records associated with Health IDs or MCDM numbers can only be accessed with the informed consent of the individual.
-                    </p>
-
-                    <p className='mt-5 md:text-xl text-smxl'>
-                        People have the option to create an alias, referred to as an "MCDM address" (similar to the email ID xyz@ndhm with a password).
-                    </p>
-
-                    <p className='mt-5 md:text-xl text-smxl'>
-                        Highly secure & private, data sharing happens only with the user’s consent
-                    </p>
-
-                </div>
-                <div className="md:w-1/2 md:mt-0 mt-5">
-                    <div className=" w-full bg-base-100 rounded-xl shadow-xl h-full">
-                        <div className='card-body'>
-                            <div className='prose prose-base'>
-                                <h2 className='text-center text-primary'>Create Medical Record</h2>
-                               
-                                <select className="select select-bordered w-full">
-                                    <option disabled selected>Type of Record</option>
-                                    <option>Lab Report</option>
-                                    <option>Prescription</option>
-                                    <option>Scan</option>
-                                    <option>Discharge Summary</option>
-                                    <option>Vacine Certificat</option>
-                                    <option>Insurance</option>
-                                    <option>Invoice</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-
-                            <input type="date" placeholder="Type here" className="input w-full border border-gray-300" />
-
-                            <div className="flex flex-wrap gap-2 ">
-                                {tags.map((tag, index) => (
-                                    <div key={index} className="bg-gray-200 rounded-full px-3 py-1 flex items-center">
-                                        <span className="text-gray-800 mr-1">{tag}</span>
-                                        <button onClick={() => removeTag(tag)}>&times;</button>
-                                    </div>
-                                ))}
-                                <input
-                                    type="text"
-                                    value={inputValue}
-                                    onChange={handleInputChange}
-                                    onKeyPress={handleInputKeyPress}
-                                    className="border border-gray-300 input rounded w-full "
-                                    placeholder="Enter tags"
-                                />
-                            </div>
-
-                            <button className='btn btn-accent text-white rounded-2xl text-lg mt-5'>Submit</button>
-                        </div>
-                        {/* <div className="card-body">
+            {/* <div className="card-body">
                             <h2 className="card-title text-center text-4xl">Create Medi-Chart Health Account</h2>
                             <p className='text-2xl text-center font-bold text-[#E58075]'>Medi-Chart (Health ID)
                                 Card</p>
@@ -158,12 +187,9 @@ export default function HealthID() {
                             )}
 
                         </div> */}
-
-                    </div>
-                </div>
-
-            </div>
-
-        </>
-    )
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

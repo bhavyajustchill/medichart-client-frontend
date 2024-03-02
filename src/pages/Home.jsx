@@ -42,8 +42,8 @@ export default function Home() {
                     Participate in india's Healthcare Revolution
                   </p>
                   <p className="md:text-lg text-xs md:mt-7 mt-5 md:text-start text-center">
-                    Create MCHA & store all your medical records with Eka care
-                    (Govt of India ABDM approved PHR app)
+                    Create MCHA & store all your medical records with MediCard
+                    (Govt of India MCHA approved PHR app)
                   </p>
                   <button className="btn btn-primary md:mt-7 mt-5 md:ms-0 ms-40">
                     CREATE MCHA
@@ -145,8 +145,8 @@ export default function Home() {
               <p className="ms-4 md:text-lg text-sm font-medium">Store</p>
               <div>
                 <p className="mt-8 md:text-md text-sm md:-ms-10 -ms-10">
-                  Eka’s integrated approach allows you to fetch medical records
-                  from hospitals, labs, doctors and even your email!
+                  MediCard’s integrated approach allows you to fetch medical
+                  records from hospitals, labs, doctors and even your email!
                 </p>
                 <button className="btn btn-outline btn-primary md:mt-8 mt-3 w-24 -ms-10">
                   Try Now
@@ -268,13 +268,13 @@ export default function Home() {
               <div className="flex md:flex-row flex-col">
                 <div className="md:w-1/2">
                   <p className="md:text-4xl text-lg font-bold md:text-start text-center">
-                    Download CoWin Vaccine Certificate
+                    Download Your Medical Records
                   </p>
                   <p className="md:text-lg text-xs md:mt-7 mt-3 md:text-start text-center">
                     Using only your mobile number
                   </p>
                   <button className="bg-[#104751] rounded-lg text-white w-52 h-12 md:mt-7 mt-5  md:ms-0 ms-28">
-                    DOWNLOAD CERTIFICATE
+                    Download Records
                   </button>
                   <div className="flex md:flex-row flex-col md:mt-10 mt-5">
                     <div className="md:w-1/2 flex md:ms-0 ms-28 ">
@@ -371,7 +371,7 @@ export default function Home() {
             <i className="bi bi-caret-right-fill"></i>
             <p>
               Instant doctor connect for all your queries. Send your report to
-              <span className="font-bold">'yourmobileno'@Medi-Chart</span>
+              <span className="font-bold">'yourmobileno'@Medi-Card</span>
             </p>
           </div>
           <button className="bg-[#6567EC] rounded-md w-64 font-bold h-12 text-white mt-8 ">
@@ -392,7 +392,7 @@ export default function Home() {
               </p>
               <p className="md:text-lg text-xs md:mt-12 mt-4 md:text-start text-center text-white">
                 Your patient’s health profile will be automatically synced in
-                Eka’s ABDM{" "}
+                MediCard’s MCHA{" "}
               </p>
               <p className="md:text-lg text-xs md:text-start text-center text-white">
                 compliant EMR

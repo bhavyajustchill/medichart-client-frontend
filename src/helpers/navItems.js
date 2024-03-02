@@ -5,8 +5,8 @@
 //       label: "For Doctors",
 //     },
 //     {
-//       link: "/ABDM",
-//       label: "ABDM",
+//       link: "/MCHA",
+//       label: "MCHA",
 
 //     },
 //     {
@@ -28,18 +28,18 @@ export default function navItems() {
       type: "ghost",
     },
     {
-      label: "ABDM",
+      label: "MCHA",
       subItems: [
         {
-          link: "/ABDM",
+          link: "/MCHA",
           label: "Create MCHA",
         },
         {
-          link: "/ABDM/about",
-          label: "About ABDM ",
+          link: "/MCHA/about",
+          label: "About MCHA ",
         },
         {
-          link: "/ABDM/contact",
+          link: "/MCHA/contact",
           label: "About PMJAY",
         },
       ],
@@ -80,7 +80,7 @@ export default function navItems() {
         },
         {
           link: "/About/about",
-          label: "Eka Stories",
+          label: "MediCard Stories",
         },
         {
           link: "/About/contact",
