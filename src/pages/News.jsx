@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export default function News() {
@@ -89,7 +90,6 @@ export default function News() {
             </div>
             </>
              ))} */}
-
       <div className="md:mt-12 mt-10 md:text-sm text-xl p-12">
         <p className="font-bold text-center md:text-4xl text-xl">
           Medi Card Health Care in the news

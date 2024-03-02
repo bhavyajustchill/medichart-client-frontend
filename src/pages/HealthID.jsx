@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 export default function HealthID() {
@@ -134,6 +135,7 @@ export default function HealthID() {
               </button>
             </div>
             {/* <div className="card-body">
+
                             <h2 className="card-title text-center text-4xl">Create Medi-Chart Health Account</h2>
                             <p className='text-2xl text-center font-bold text-[#E58075]'>Medi-Chart (Health ID)
                                 Card</p>
@@ -187,9 +189,13 @@ export default function HealthID() {
                             )}
 
                         </div> */}
-          </div>
-        </div>
-      </div>
-    </>
-  );
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </>
+    )
 }

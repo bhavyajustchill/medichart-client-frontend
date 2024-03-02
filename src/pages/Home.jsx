@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+
+import React, { useState } from 'react';
 import Slider from "../components/slider/Slider";
 import Capsule from "../components/Capsule/Capsule";
 import Healthaccountcard from "../components/Healthaccountcard";
-import Medicalrecord from "./Medicalrecord";
-import Useraboutus from "./Useraboutus";
-import News from "./News";
-import Mission from "./Mission";
+import Medicalrecord from './Medicalrecord';
+import Useraboutus from './Useraboutus';
+import News from './News';
+import Mission from './Mission';
+
 
 export default function Home() {
-  const [imageSrc, setImageSrc] = useState("/assets/image12.jpg");
+  const [imageSrc, setImageSrc] = useState('/assets/image12.jpg');
   const changeImage = (newSrc) => {
     setImageSrc(newSrc);
   };
   return (
     <>
+
       <div className="text-sm breadcrumbs bg-[#F1F1FF] -mt-20">
         <ul>
           <li className="ms-12">
@@ -31,6 +34,7 @@ export default function Home() {
         <div className="mt-10">
           <Healthaccountcard />
         </div>
+
       </div>
       <div className="bg-gray-100 mt-5">
         <div className="p-8 ">
@@ -38,6 +42,7 @@ export default function Home() {
             <div className="card-body">
               <div className="flex md:flex-row flex-col">
                 <div className="md:w-1/2">
+
                   <p className="md:text-4xl text-md font-bold text-center">
                     Participate in india's Healthcare Revolution
                   </p>
@@ -103,14 +108,12 @@ export default function Home() {
                       <p className="md:text-md text-xs mt-1">
                         Official partner of Government of India
                       </p>
+
                     </div>
                   </div>
                 </div>
                 <div className="md:w-1/2">
-                  <img
-                    className="h-auto md:max-w-sm md:ms-52 mt-5"
-                    src="/assets/image10.jpg"
-                  />
+                  <img className="h-auto md:max-w-sm md:ms-52 mt-5" src="/assets/image10.jpg" />
                 </div>
               </div>
             </div>
@@ -122,6 +125,7 @@ export default function Home() {
         <div className="bg-green-100 text-center container mx-auto rounded-md mt-8 w-64">
           <p className="md:text-md text-sm">YOUR SMART HEALTH LOCKER</p>
         </div>
+
         <p className="md:mt-6 mt-2 font-bold md:text-4xl text-2xl ms-auto text-center">
           Never lose a medical record again
         </p>
@@ -341,10 +345,12 @@ export default function Home() {
                   />
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
+
 
       <div className="bg-green-100 text-center container mx-auto rounded-md mt-8 w-64">
         <p className="md:text-md text-sm">YOUR PERSONAL HEALTH PROFILE</p>
@@ -406,6 +412,49 @@ export default function Home() {
                 className="h-auto md:max-w-96"
                 src="/assets/cl5i3f7rx000h0sh99fy5fs3q.png"
               />
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-100 text-center container mx-auto rounded-md mt-8 w-64">
+        <p className="md:text-md text-sm">YOUR PERSONAL HEALTH PROFILE</p>
+      </div>
+      <p className="md:mt-6 mt-2 font-bold md:text-4xl text-lg ms-auto text-center">An automated health profile from your medical data</p>
+      <p className="md:mt-6 mt-2 ms-auto text-center md:text-md text-sm ">See longitudinal vital trends, get health insights, and stay one step ahead</p>
+      <div className="flex md:flex-row flex-col mb-4 mt-5">
+        <div className="md:w-1/2 md:p-24 p-10">
+          <div className="flex ">
+            <i className="bi bi-caret-right-fill"></i>
+            <p>Get a health rating of each organ & understand risk factors</p>
+          </div>
+          <div className="flex mt-7">
+            <i className="bi bi-caret-right-fill"></i>
+            <p>All your vital information is digitised & a trend is </p>
+          </div>
+          <p className="ms-4">automatically created for easy understanding</p>
+          <div className="flex mt-7">
+            <i className="bi bi-caret-right-fill"></i>
+            <p>Instant doctor connect for all your queries. Send your report to<span className="font-bold">'yourmobileno'@Medi-Chart</span></p>
+          </div>
+          <button className="bg-[#6567EC] rounded-md w-64 font-bold h-12 text-white mt-8 ">UPLOAD A LAB REPORT  NOW</button>
+        </div>
+        <div className="md:w-1/2  flex md:justify-end justify-center md:items-end items-center">
+          <img src="/assets/cl5iahwbg000v0sh9dihle57k.png" />
+        </div>
+      </div>
+
+      <div className="card lg:card-side bg-[#5C7AFF] shadow-xl container mx-auto ">
+        <div className="card-body">
+          <div className="flex md:flex-row flex-col">
+            <div className="md:w-1/2 p-4">
+              <p className="md:text-5xl text-xl font-bold md:text-start text-center text-white">Are you a doctor?</p>
+              <p className="md:text-lg text-xs md:mt-12 mt-4 md:text-start text-center text-white">Your patient’s health profile will be automatically synced in Eka’s ABDM </p>
+              <p className="md:text-lg text-xs md:text-start text-center text-white">compliant EMR</p>
+              <button className="bg-[#17185A] rounded-lg text-white w-52 h-12 md:mt-9 mt-5  md:ms-0 ms-36">CONTACT US</button>
+            </div>
+            <div className="md:w-1/2 flex justify-end items-end">
+              <img className="h-auto md:max-w-96" src="/assets/cl5i3f7rx000h0sh99fy5fs3q.png" />
             </div>
           </div>
         </div>
@@ -413,9 +462,10 @@ export default function Home() {
 
       <Medicalrecord />
       <Useraboutus />
-
       <News />
       <Mission />
     </>
   );
 }
+
+

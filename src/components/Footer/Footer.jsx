@@ -22,6 +22,7 @@ const footerCardData = [
     list: [
       { label: "For Doctors", link: "#" },
       { label: "MediCard EMR", link: "#" },
+
       { label: "GMB For Doctors", link: "#" },
       { label: "EMR for Neurologists", link: "#" },
     ],
