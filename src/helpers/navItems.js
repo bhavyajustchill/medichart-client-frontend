@@ -1,29 +1,9 @@
-// export default function navItems() {
-//   return [
-//     {
-//       link: "/",
-//       label: "For Doctors",
-//     },
-//     {
-//       link: "/ABDM",
-//       label: "ABDM",
-      
-//     },
-//     {
-//       link: "/Covid 19",
-//       label: "Covid 19",
-//     },
-//     {
-//       link: "/About",
-//       label: "About",
-//     },
-//   ];
-// }
+
 
 export default function navItems() {
   return [
     {
-      link: "/",
+      link: "/for-doctors",
       label: "For Doctors",
       type:'ghost',
     },
