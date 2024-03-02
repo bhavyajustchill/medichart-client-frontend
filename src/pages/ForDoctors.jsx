@@ -202,8 +202,9 @@ export default function ForDoctors() {
         <div className="relative p-10 flex flex-col min-w-0 rounded break-words border  border-1 border-white bg-pink-100" style={{ borderRadius: "24px", fontFamily: "DM Sans, sans-serif " }} >
           <div className="flex md:flex-row flex-col mb-4 ">
             <div className="md:w-1/2 ">
-              <p className="md:text-5xl text-2xl font-bold ">Manage your practice securely with built in layers of privacy & protection</p>
-              <button className="btn btn-primary w-96 flex justify-center items-center md:mt-24 mt-10 md:ms-0 ms-20">SCHEDULE A DEMO</button>
+              <p className="md:text-4xl text-2xl font-bold">Manage your practice securely with built in layers of privacy & protection</p>
+              <div className="flex md:justify-start justify-center items-start item-center"><button className="btn btn-primary w-96 flex justify-center items-center md:mt-24 mt-10 ">SCHEDULE A DEMO</button></div>
+
             </div>
             <div className="md:w-1/2 md:mt-0 mt-5 flex justify-center items-center md:ms-80">
               <img src="./assets/cl7ephyna00030thtdedvab7e.png" className="md:w-64 w-32" />
@@ -238,8 +239,8 @@ export default function ForDoctors() {
       <div class="flex md:flex-row flex-col mb-4 mt-12   justify-center items-center">
         <div class="md:w-1/3 mt-5">
           <div className="flex">
-          <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FFF4F3"></rect><path d="M41.6876 25.1602C41.6565 25.0204 41.5958 24.8889 41.5095 24.7746C41.4233 24.6603 41.3135 24.5658 41.1876 24.4977L38.2126 22.8477C38.0542 22.5227 37.8792 22.2102 37.6876 21.9102L37.7376 18.5102C37.7387 18.3675 37.7104 18.2262 37.6545 18.095C37.5986 17.9638 37.5162 17.8456 37.4126 17.7477C35.9313 16.4046 34.1795 15.3945 32.2751 14.7852C32.1383 14.7425 31.994 14.7294 31.8518 14.7466C31.7096 14.7639 31.5727 14.8111 31.4501 14.8852L28.5376 16.6352C28.1751 16.6227 27.8251 16.6227 27.4626 16.6352L24.5501 14.8852C24.4274 14.8111 24.2905 14.7639 24.1483 14.7466C24.0061 14.7294 23.8618 14.7425 23.7251 14.7852C21.8181 15.3949 20.0656 16.4098 18.5876 17.7602C18.483 17.8547 18.3999 17.9706 18.3438 18.1C18.2878 18.2293 18.26 18.3692 18.2626 18.5102L18.3251 21.9102C18.1251 22.2102 17.9501 22.5227 17.7751 22.8477L14.8126 24.4977C14.6851 24.5638 14.574 24.6576 14.4875 24.7722C14.401 24.8869 14.3412 25.0194 14.3126 25.1602C13.8875 27.1123 13.8875 29.133 14.3126 31.0852C14.3436 31.2249 14.4043 31.3564 14.4906 31.4707C14.5768 31.585 14.6866 31.6795 14.8126 31.7477L17.7876 33.3977C17.947 33.721 18.1266 34.0341 18.3251 34.3352L18.2626 37.7352C18.2614 37.8778 18.2897 38.0191 18.3456 38.1503C18.4015 38.2815 18.4839 38.3997 18.5876 38.4977C20.0709 39.8379 21.8221 40.8477 23.7251 41.4602C23.8618 41.5028 24.0061 41.5159 24.1483 41.4987C24.2905 41.4815 24.4274 41.4342 24.5501 41.3602L27.4626 39.6102H28.5376L31.4626 41.3602C31.6146 41.4601 31.7931 41.5124 31.9751 41.5102C32.0767 41.5058 32.1775 41.489 32.2751 41.4602C34.182 40.8504 35.9345 39.8355 37.4126 38.4852C37.5171 38.3906 37.6002 38.2747 37.6563 38.1454C37.7124 38.016 37.7401 37.8761 37.7376 37.7352L37.6876 34.3352C37.8751 34.0352 38.0501 33.7227 38.2251 33.3977L41.2001 31.7477C41.3242 31.6788 41.4319 31.5839 41.5161 31.4696C41.6002 31.3553 41.6587 31.2241 41.6876 31.0852C42.1126 29.133 42.1126 27.1123 41.6876 25.1602ZM33.5001 28.1227C33.5001 29.2105 33.1775 30.2738 32.5731 31.1783C31.9688 32.0828 31.1098 32.7877 30.1048 33.204C29.0998 33.6203 27.994 33.7292 26.9271 33.517C25.8602 33.3048 24.8802 32.7809 24.111 32.0117C23.3418 31.2426 22.818 30.2625 22.6057 29.1957C22.3935 28.1288 22.5024 27.0229 22.9187 26.0179C23.335 25.0129 24.0399 24.1539 24.9444 23.5496C25.8489 22.9452 26.9123 22.6227 28.0001 22.6227C29.4587 22.6227 30.8577 23.2021 31.8891 24.2336C32.9206 25.265 33.5001 26.664 33.5001 28.1227Z" fill="#EC6657"></path></svg>
-              <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Personalised & comprehensive Practice Management Tool</p>
+            <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FFF4F3"></rect><path d="M41.6876 25.1602C41.6565 25.0204 41.5958 24.8889 41.5095 24.7746C41.4233 24.6603 41.3135 24.5658 41.1876 24.4977L38.2126 22.8477C38.0542 22.5227 37.8792 22.2102 37.6876 21.9102L37.7376 18.5102C37.7387 18.3675 37.7104 18.2262 37.6545 18.095C37.5986 17.9638 37.5162 17.8456 37.4126 17.7477C35.9313 16.4046 34.1795 15.3945 32.2751 14.7852C32.1383 14.7425 31.994 14.7294 31.8518 14.7466C31.7096 14.7639 31.5727 14.8111 31.4501 14.8852L28.5376 16.6352C28.1751 16.6227 27.8251 16.6227 27.4626 16.6352L24.5501 14.8852C24.4274 14.8111 24.2905 14.7639 24.1483 14.7466C24.0061 14.7294 23.8618 14.7425 23.7251 14.7852C21.8181 15.3949 20.0656 16.4098 18.5876 17.7602C18.483 17.8547 18.3999 17.9706 18.3438 18.1C18.2878 18.2293 18.26 18.3692 18.2626 18.5102L18.3251 21.9102C18.1251 22.2102 17.9501 22.5227 17.7751 22.8477L14.8126 24.4977C14.6851 24.5638 14.574 24.6576 14.4875 24.7722C14.401 24.8869 14.3412 25.0194 14.3126 25.1602C13.8875 27.1123 13.8875 29.133 14.3126 31.0852C14.3436 31.2249 14.4043 31.3564 14.4906 31.4707C14.5768 31.585 14.6866 31.6795 14.8126 31.7477L17.7876 33.3977C17.947 33.721 18.1266 34.0341 18.3251 34.3352L18.2626 37.7352C18.2614 37.8778 18.2897 38.0191 18.3456 38.1503C18.4015 38.2815 18.4839 38.3997 18.5876 38.4977C20.0709 39.8379 21.8221 40.8477 23.7251 41.4602C23.8618 41.5028 24.0061 41.5159 24.1483 41.4987C24.2905 41.4815 24.4274 41.4342 24.5501 41.3602L27.4626 39.6102H28.5376L31.4626 41.3602C31.6146 41.4601 31.7931 41.5124 31.9751 41.5102C32.0767 41.5058 32.1775 41.489 32.2751 41.4602C34.182 40.8504 35.9345 39.8355 37.4126 38.4852C37.5171 38.3906 37.6002 38.2747 37.6563 38.1454C37.7124 38.016 37.7401 37.8761 37.7376 37.7352L37.6876 34.3352C37.8751 34.0352 38.0501 33.7227 38.2251 33.3977L41.2001 31.7477C41.3242 31.6788 41.4319 31.5839 41.5161 31.4696C41.6002 31.3553 41.6587 31.2241 41.6876 31.0852C42.1126 29.133 42.1126 27.1123 41.6876 25.1602ZM33.5001 28.1227C33.5001 29.2105 33.1775 30.2738 32.5731 31.1783C31.9688 32.0828 31.1098 32.7877 30.1048 33.204C29.0998 33.6203 27.994 33.7292 26.9271 33.517C25.8602 33.3048 24.8802 32.7809 24.111 32.0117C23.3418 31.2426 22.818 30.2625 22.6057 29.1957C22.3935 28.1288 22.5024 27.0229 22.9187 26.0179C23.335 25.0129 24.0399 24.1539 24.9444 23.5496C25.8489 22.9452 26.9123 22.6227 28.0001 22.6227C29.4587 22.6227 30.8577 23.2021 31.8891 24.2336C32.9206 25.265 33.5001 26.664 33.5001 28.1227Z" fill="#EC6657"></path></svg>
+            <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Personalised & comprehensive Practice Management Tool</p>
           </div>
           <div>
             <p className="mt-8 text-lg ms-16">Communicate & connect with your patients</p>
@@ -260,7 +261,7 @@ export default function ForDoctors() {
         </div>
         <div class="md:w-1/3 mt-5">
           <div className="flex">
-          <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
+            <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
             <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Integrations & Migrations</p>
           </div>
           <div>
@@ -275,8 +276,8 @@ export default function ForDoctors() {
       <div class="flex md:flex-row flex-col mb-4 mt-12 justify-center items-center">
         <div class="md:w-1/3 mt-5">
           <div className="flex">
-         <img src="./assets/icon.png" className="w-20 h-16"/>
-              <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Patient connect with Eka patient app</p>
+            <img src="./assets/icon.png" className="w-20 h-16" />
+            <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Patient connect with Eka patient app</p>
           </div>
           <div>
             <p className="mt-8 text-lg ms-16">Communicate & connect with your patients</p>
@@ -296,7 +297,7 @@ export default function ForDoctors() {
         </div>
         <div class="md:w-1/3 mt-5">
           <div className="flex">
-          <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
+            <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
             <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Marketing</p>
           </div>
           <div>
@@ -307,131 +308,256 @@ export default function ForDoctors() {
 
         </div>
       </div>
-      {/* <div>
-      <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full">
-          <div className='bg-[#FFF5DB] w-full '>
-            <div className='container mx-auto p-12'>
-              <div className="flex mb-4">
 
-                <div className="w-3/4 ">
-                  <div className="rating ">
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                  </div>
-                  <p className='text-3xl mt-5 font-medium'>Eka.care has helped me to view my patient’s complete medical history in a glance. This has been instrumental in providing better care especially to chronic patients. Features like single page Rx, has helped me to bring down my prescription writing time drastically. I am now able to spend more time with my patients, understanding their ailments and build relationships with my patients.</p>
-                  <div>
-                    <h1 className='font-bold text-xl mt-5'>Dr. Srinivas</h1>
-                    <h1 className='text-xl'>Gastroenterologist | Practicing in Guntur, Andhra Pradesh</h1>
-                  </div>
-                </div>
-                <div className="w-1/4 ">
-                  <img src='./assets/clawis6iv00470saoa7c17hpd.png' className='h-full' />
-                </div>
+      <div className="bg-green-100 text-center container mx-auto rounded-md mt-10 w-96">
+        <p className="md:text-lg text-sm">EKA CLINIC MANAGEMENT TOOL</p>
+      </div>
+      <p className="text-center font-bold md:text-4xl text-xl mt-5">Personalised & comprehensive Practice Management Tool</p>
+      <p className="text-center mt-6">Every speciality is different and his its own nuances - to make sure we do justice to this we personalise our practice management tool and marketing support</p>
+      <div className="p-16 ">
+        <div className="flex justify-center items-center">
+          <div className="card w-96 shadow-2xl  bg-cyan-50">
+            <div className="card-body">
+              <img src="./assets/cla6mscsj00350saohwf9fgsw.png" className="w-8" />
+              <h2 className="card-title text-2xl font-bold">Endocrinologist</h2>
+              <p className="mt-4">Every speciality is different and has its own nuances</p>
+              <div className="card-actions justify-start mt-6">
+                <p>LEARN MORE</p>
               </div>
             </div>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">❮</a>
-            <a href="#slide2" className="btn btn-circle">❯</a>
+
+          <div className="card w-96 shadow-2xl ms-16 bg-cyan-50">
+            <div className="card-body">
+              <img src="./assets/cla6msq9s004l0thtc5pfdq35.png" className="w-8" />
+              <h2 className="card-title text-2xl font-bold">Cardiologist</h2>
+              <p className="mt-4">Every speciality is different and has its own nuances</p>
+              <div className="card-actions justify-start mt-6">
+                <p>LEARN MORE</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <div className='bg-[#FFF5DB] w-full '>
-            <div className='container mx-auto p-12'>
-              <div className="flex mb-4">
-                <div className="w-3/4 ">
-                  <div className="rating ">
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                  </div>
-                  <p className='text-3xl mt-5 font-medium'>Features like single page Rx, has helped me to bring down my prescription writing time drastically. I am now able to spend more time with my patients, understanding their ailments and building relationships. Eka.care has helped me to view my patient’s complete medical history in a glance. This has been instrumental in providing better care especially to chronic patients. My patients are also able to store all their records along with my prescriptions.</p>
-                  <div>
-                    <h1 className='font-bold text-xl mt-5'>Dr. Hanumantha Rao</h1>
-                    <h1 className='text-xl'>Endocrinologist | Practicing at Ongole, Andhra Pradesh</h1>
-                  </div>
-                </div>
-                <div className="w-1/4 ">
-                  <img src='./assets/clb4tpegy005x0thtbawhee4b.jpeg' className='h-full' />
-                </div>
+        <div className="flex justify-center items-center mt-10">
+          <div className="card w-96 shadow-2xl  bg-cyan-50">
+            <div className="card-body">
+              <img src="./assets/cla6mt5e700370sao57nfhouc.png" className="w-8" />
+              <h2 className="card-title text-2xl font-bold">Pulmonologist</h2>
+              <p className="mt-4">Every speciality is different and has its own nuances</p>
+              <div className="card-actions justify-start mt-6">
+                <p>LEARN MORE</p>
               </div>
             </div>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">❮</a>
-            <a href="#slide3" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <div className='bg-[#FFF5DB] w-full '>
-            <div className='container mx-auto p-12'>
-              <div className="flex mb-4">
 
-                <div className="w-3/4 pt-16">
-                  <div className="rating ">
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                  </div>
-                  <p className='text-3xl font-medium mt-14'>“eka.care has helped me to view my patient’s complete medical history in a glance. This has been instrumental in providing better care especially to chronic patients”</p>
-                  <div className=''>
-                    <h1 className='font-bold text-xl mt-5 '>Dr. Kiran Makineni</h1>
-                    <h1 className='text-xl '>MBBS. MS, DNB</h1>
-                  </div>
-                </div>
-                <div className="w-1/4 ">
-                  <img src='./assets/cl7fzvvuf000n0sfg2vqu196v.png' className='h-full' />
-                </div>
+          <div className="card w-96 shadow-2xl ms-16 bg-cyan-50">
+            <div className="card-body">
+              <img src="./assets/cla6mtklr004n0tht2anndsj7.png" className="w-8" />
+              <h2 className="card-title text-2xl font-bold">Gastrologist</h2>
+              <p className="mt-4">Every speciality is different and has its own nuances</p>
+              <div className="card-actions justify-start mt-6">
+                <p>LEARN MORE</p>
               </div>
             </div>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">❮</a>
-            <a href="#slide4" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-        
-        <div id="slide4" className="carousel-item relative w-full">
-          <div className='bg-[#FFF5DB] w-full '>
-            <div className='container mx-auto p-12'>
-              <div className="flex mb-4">
-
-                <div className="w-3/4 ">
-                  <div className="rating ">
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                    <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
-                  </div>
-                  <p className='text-3xl mt-5 font-medium'>Eka.care has helped me to organize & access my patient's medical records with ease. This gives me a holistic view of my patient's medical history, past treatments, and helps me to offer better care. I can also send prescriptions, follow up & medicine reminders over WhatsApp. With eka, I have moved my practice, completely digital! Also I want to mention that the whole team of Eka is extremely helpful to resolve the issues. Mr. Rajesh kr. Singh has given full support at my clinic physically. THANKS TO ALL EKA CARE.</p>
-                  <div>
-                    <h1 className='font-bold text-xl mt-5'>Dr. Ravinder Amraik</h1>
-                    <h1 className='text-xl'>General Physician</h1>
-                  </div>
-                </div>
-                <div className="w-1/4 ">
-                  <img src='./assets/clb6f7eub004d0sao3mgq7w0x.jpeg' className='h-full' />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">❮</a>
-            <a href="#slide1" className="btn btn-circle">❯</a>
           </div>
         </div>
       </div>
-    </div> */}
 
+      <div>
+        <div className="carousel w-full">
+          <div id="slide1" className="carousel-item relative w-full">
+            <div className='bg-[#FFF5DB] w-full '>
+              <div className='container mx-auto p-12'>
+                <div className="flex md:flex-row flex-col mb-4">
+
+                  <div className="md:w-3/4 ">
+                    <div className="rating ">
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                    </div>
+                    <p className='md:text-3xl text-xl mt-5 font-medium'>Eka.care has helped me to view my patient’s complete medical history in a glance. This has been instrumental in providing better care especially to chronic patients. Features like single page Rx, has helped me to bring down my prescription writing time drastically. I am now able to spend more time with my patients, understanding their ailments and build relationships with my patients.</p>
+                    <div>
+                      <h1 className='font-bold text-xl mt-5'>Dr. Srinivas</h1>
+                      <h1 className='text-xl'>Gastroenterologist | Practicing in Guntur, Andhra Pradesh</h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 ">
+                    <img src='./assets/clawis6iv00470saoa7c17hpd.png' className='h-full' />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 md:top-1/2 top-96">
+              <a href="#slide4" className="btn btn-circle">❮</a>
+              <a href="#slide2" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" className="carousel-item relative w-full">
+            <div className='bg-[#FFF5DB] w-full '>
+              <div className='container mx-auto p-12'>
+                <div className="flex md:flex-row flex-col mb-4">
+                  <div className="md:w-3/4 ">
+                    <div className="rating ">
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                    </div>
+                    <p className='md:text-3xl text-xl mt-5 font-medium'>Features like single page Rx, has helped me to bring down my prescription writing time drastically. I am now able to spend more time with my patients, understanding their ailments and building relationships. Eka.care has helped me to view my patient’s complete medical history in a glance. This has been instrumental in providing better care especially to chronic patients. My patients are also able to store all their records along with my prescriptions.</p>
+                    <div>
+                      <h1 className='font-bold text-xl mt-5'>Dr. Hanumantha Rao</h1>
+                      <h1 className='text-xl'>Endocrinologist | Practicing at Ongole, Andhra Pradesh</h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 ">
+                    <img src='./assets/clb4tpegy005x0thtbawhee4b.jpeg' className='h-full' />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" className="btn btn-circle">❮</a>
+              <a href="#slide3" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+            <div className='bg-[#FFF5DB] w-full '>
+              <div className='container mx-auto p-12'>
+                <div className="flex md:flex-row flex-col mb-4">
+
+                  <div className="md:w-3/4 pt-16">
+                    <div className="rating ">
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                    </div>
+                    <p className='md:text-3xl text-xl font-medium mt-14'>“eka.care has helped me to view my patient’s complete medical history in a glance. This has been instrumental in providing better care especially to chronic patients”</p>
+                    <div className=''>
+                      <h1 className='font-bold text-xl mt-5 '>Dr. Kiran Makineni</h1>
+                      <h1 className='text-xl '>MBBS. MS, DNB</h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 ">
+                    <img src='./assets/cl7fzvvuf000n0sfg2vqu196v.png' className='h-full' />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 md:top-1/2 top-96">
+              <a href="#slide2" className="btn btn-circle">❮</a>
+              <a href="#slide4" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <div id="slide4" className="carousel-item relative w-full">
+            <div className='bg-[#FFF5DB] w-full '>
+              <div className='container mx-auto p-12'>
+                <div className="flex md:flex-row flex-col mb-4">
+
+                  <div className="md:w-3/4">
+                    <div className="rating ">
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                      <input type="radio" name="rating-4" className="mask mask-star-2 bg-[#EDAE0C]" />
+                    </div>
+                    <p className='md:text-3xl text-xl mt-5 font-medium'>Eka.care has helped me to organize & access my patient's medical records with ease. This gives me a holistic view of my patient's medical history, past treatments, and helps me to offer better care. I can also send prescriptions, follow up & medicine reminders over WhatsApp. With eka, I have moved my practice, completely digital! Also I want to mention that the whole team of Eka is extremely helpful to resolve the issues. Mr. Rajesh kr. Singh has given full support at my clinic physically. THANKS TO ALL EKA CARE.</p>
+                    <div>
+                      <h1 className='font-bold text-xl mt-5'>Dr. Ravinder Amraik</h1>
+                      <h1 className='text-xl'>General Physician</h1>
+                    </div>
+                  </div>
+                  <div className="w-1/4 ">
+                    <img src='./assets/clb6f7eub004d0sao3mgq7w0x.jpeg' className='h-full' />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" className="btn btn-circle">❮</a>
+              <a href="#slide1" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p className="font-bold text-3xl mt-5 text-center ">Frequently Asked Questions</p>
+        <div className="md:p-20 p-10">
+          <div className="collapse collapse-plus bg-base-200 ">
+            <input type="radio" name="my-accordion-3" defaultChecked />
+            <div className="collapse-title text-xl font-medium">
+              What is the full form of EMR and EHR in healthcare?
+            </div>
+            <div className="collapse-content">
+              <p>EMR is an Electronic Medical Record and EHR is an Electronic Health Record.</p>
+            </div>
+          </div>
+          <div className="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div className="collapse-title text-xl font-medium">
+              What is EHR?
+            </div>
+            <div className="collapse-content">
+              <p>EHR (Electronic Health record) is a digital record of an individual’s health information. An Electronic Health records contains all the information about the patient’s past medical history, vital signs, progress notes, diagnoses, medications, immunisation dates, allergies, lab data and imaging reports. The digital record, can also contain other relevant information, such as insurance information, and demographic data.</p>
+            </div>
+          </div>
+          <div className="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div className="collapse-title text-xl font-medium">
+              What is EMR?
+            </div>
+            <div className="collapse-content">
+              <p>EMRs- Electronic medical records are digital versions of prescriptions or paper charts during a patient’s consultation. An EMR contains patient’s treatment and medical history at one place. EMRs have significant advantages over paper records, allowing caregivers to:
+
+                <p>*Track data over time</p>
+                <p>*Track & identify the patients, who are due for appointments, preventive screenings or checkups</p>
+                <p>*Check how their patients are doing on certain parameters—such as blood pressure readings, vaccinations and other clinical data</p>
+                *Monitor and improve overall quality of care within the practice</p>
+            </div>
+
+            <div className="collapse collapse-plus bg-base-200 ">
+              <input type="radio" name="my-accordion-3" defaultChecked />
+              <div className="collapse-title text-xl font-medium">
+                Why are doctors opting for eka.care- EHR software, for patient and clinic management?
+              </div>
+              <div className="collapse-content">
+                <p>Fundamentally, EMR allows caregivers to see a large number of patients, helping them to organise and manage their records efficiently.
+
+                  Eka.care is a comprehensive clinic management platform, allowing doctors to manage their practice and build a long-term relationship with their patients. It is secure, and dependable. Feature like WhatsApp integration and Self-Assessment helps doctors to save time and offer better care.
+
+                  eka.care prescription pad can be customised s per doctor’s specialisation, which makes it a doctor’s preferred choice.</p>
+              </div>
+            </div>
+
+            <div className="collapse collapse-plus bg-base-200 ">
+              <input type="radio" name="my-accordion-3" defaultChecked />
+              <div className="collapse-title text-xl font-medium">
+              What kind of data securities, Eka care uses to secure patients data?
+              </div>
+              <div className="collapse-content">
+                <p>All data is protected by encryption. We are FHIR complaint. The log-in based- One-Time-Password (OTP) authentication system ensures that the doctor has complete control over his account. eka.care signs a NDA with all its doctors, barring sharing of data.</p>
+              </div>
+            </div>
+
+            <div className="collapse collapse-plus bg-base-200 ">
+              <input type="radio" name="my-accordion-3" defaultChecked />
+              <div className="collapse-title text-xl font-medium">
+              What are the minimum system requirements to run Eka care EMR software?
+              </div>
+              <div className="collapse-content">
+                <p>Eka Care EMR software does not need any specific system; the eka.care app for Doctors is available and can be downloaded from the ios and android store. The platform is works across devices- smartphone, desktop, laptop, or tablets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
