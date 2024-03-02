@@ -198,15 +198,15 @@ export default function ForDoctors() {
       </div>
 
 
-      <div className="w-full h-auto mt-5 container mx-auto" style={{ zIndex: '-1' }}>
+      <div className="w-full h-auto mt-5 container mx-auto " style={{ zIndex: '-1' }}>
         <div className="relative p-10 flex flex-col min-w-0 rounded break-words border  border-1 border-white bg-pink-100" style={{ borderRadius: "24px", fontFamily: "DM Sans, sans-serif " }} >
           <div className="flex md:flex-row flex-col mb-4 ">
             <div className="md:w-1/2 ">
-              <p className="text-5xl font-bold ">Manage your practice securely with built in layers of privacy & protection</p>
-              <button className="btn btn-primary w-96 mt-24">SCHEDULE A DEMO</button>
+              <p className="md:text-5xl text-2xl font-bold ">Manage your practice securely with built in layers of privacy & protection</p>
+              <button className="btn btn-primary w-96 flex justify-center items-center md:mt-24 mt-10 md:ms-0 ms-20">SCHEDULE A DEMO</button>
             </div>
-            <div className="md:w-1/2 md:mt-0 mt-5 flex justify-center items-center ms-80">
-              <img src="./assets/cl7ephyna00030thtdedvab7e.png" className="w-64" />
+            <div className="md:w-1/2 md:mt-0 mt-5 flex justify-center items-center md:ms-80">
+              <img src="./assets/cl7ephyna00030thtdedvab7e.png" className="md:w-64 w-32" />
             </div>
           </div>
 
@@ -216,18 +216,18 @@ export default function ForDoctors() {
       <div className="bg-green-100 text-center container mx-auto rounded-md mt-8 w-64">
         <p className="md:text-lg text-sm">EXPLORE MEDI CHART</p>
       </div>
-      <p className="text-center font-bold text-4xl mt-5">Comprehensive. Convenient. Customised</p>
-      <div class="flex mb-4 mt-12">
-        <div class="w-1/2 flex justify-center items-center ">
-          <img src="./assets/cladow59h003j0sao9o2x4f2b.png" className="w-1/2" />
+      <p className="text-center font-bold md:text-4xl text-xl mt-5">Comprehensive. Convenient. Customised</p>
+      <div class="flex md:flex-row flex-col mb-4 mt-12">
+        <div class="md:w-1/2 flex justify-center items-center ">
+          <img src="./assets/cladow59h003j0sao9o2x4f2b.png" className="w-1/2 " />
         </div>
-        <div class="w-1/3 mt-5">
-          <div className="flex">
+        <div class="md:w-1/3 mt-5">
+          <div className="flex ms-24">
             <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FFF5DB"></rect><path d="M38 16.1226H35V15.1226C35 14.8573 34.8946 14.603 34.7071 14.4155C34.5196 14.2279 34.2652 14.1226 34 14.1226C33.7348 14.1226 33.4804 14.2279 33.2929 14.4155C33.1054 14.603 33 14.8573 33 15.1226V16.1226H23V15.1226C23 14.8573 22.8946 14.603 22.7071 14.4155C22.5196 14.2279 22.2652 14.1226 22 14.1226C21.7348 14.1226 21.4804 14.2279 21.2929 14.4155C21.1054 14.603 21 14.8573 21 15.1226V16.1226H18C17.4696 16.1226 16.9609 16.3333 16.5858 16.7083C16.2107 17.0834 16 17.5921 16 18.1226V38.1226C16 38.653 16.2107 39.1617 16.5858 39.5368C16.9609 39.9118 17.4696 40.1226 18 40.1226H38C38.5304 40.1226 39.0391 39.9118 39.4142 39.5368C39.7893 39.1617 40 38.653 40 38.1226V18.1226C40 17.5921 39.7893 17.0834 39.4142 16.7083C39.0391 16.3333 38.5304 16.1226 38 16.1226ZM38 22.1226H18V18.1226H21V19.1226C21 19.3878 21.1054 19.6421 21.2929 19.8297C21.4804 20.0172 21.7348 20.1226 22 20.1226C22.2652 20.1226 22.5196 20.0172 22.7071 19.8297C22.8946 19.6421 23 19.3878 23 19.1226V18.1226H33V19.1226C33 19.3878 33.1054 19.6421 33.2929 19.8297C33.4804 20.0172 33.7348 20.1226 34 20.1226C34.2652 20.1226 34.5196 20.0172 34.7071 19.8297C34.8946 19.6421 35 19.3878 35 19.1226V18.1226H38V22.1226Z" fill="#EDAE0C"></path></svg>
-            <p className="text-4xl font-bold ms-3 mt-1">Appointments & Reminders</p>
+            <p className="md:text-4xl text-2xl font-bold  mt-1 md:ms-3 ms-0">Appointments & Reminders</p>
           </div>
           <div>
-            <p className="mt-8 text-lg ms-16">Simplified schedule management tailor-made for doctors</p>
+            <p className="mt-8 text-lg ms-16 ">Simplified schedule management tailor-made for doctors</p>
             <p className="mt-10 text-lg ms-16">With eka appointments, streamline your walkins as well as online appointments - reduce patient no shows with smart reminders</p>
             <button className="btn btn-outline btn-primary mt-16 ms-16">REQUEST FOR A DEMO</button>
           </div>
@@ -249,11 +249,65 @@ export default function ForDoctors() {
         </div>
 
         <div class="w-1/2 flex justify-center items-center ">
-          <img src="./assets/cladowucr003l0saocife5im1.png" className="w-1/2" />
+          <img src="./assets/cladowucr003l0saocife5im1.png" className="w-1/2 ms-64" />
         </div>
       </div>
 
-      <div>
+
+      <div class="flex mb-4 mt-12">
+        <div class="w-1/2 flex justify-center items-center ">
+          <img src="./assets/cll0milet00010tje47uv73nq.png" className="w-1/2" />
+        </div>
+        <div class="w-1/3 mt-5">
+          <div className="flex">
+          <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
+            <p className="text-4xl font-bold ms-3 mt-1">Integrations & Migrations</p>
+          </div>
+          <div>
+            <p className="mt-8 text-lg ms-16">Using some other EMR? No problem!</p>
+            <p className="mt-10 text-lg ms-16">With eka, seamlessly transfer all your patient data from other EMRs as well as integrate your pharmacy and get lab support</p>
+            <button className="btn btn-outline btn-primary mt-16 ms-16">REQUEST FOR A DEMO</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex mb-4 mt-12 justify-center items-center">
+        <div class="w-1/3 mt-5">
+          <div className="flex">
+         <img src="./assets/icon.png" className="w-20 h-16"/>
+              <p className="text-4xl font-bold ms-3 mt-1">Patient connect with Eka patient app</p>
+          </div>
+          <div>
+            <p className="mt-8 text-lg ms-16">Communicate & connect with your patients</p>
+            <p className="mt-10 text-lg ms-16">With Eka patient app your patients can book appointments, share medical records, log their key vitals and much more</p>
+            <button className="btn btn-outline btn-primary mt-16 ms-16">LEARN MORE</button>
+          </div>
+        </div>
+
+        <div class="w-1/2 flex justify-center items-center ">
+          <img src="./assets/cladoxtz0003p0sao9tvd4yd4.png" className="w-1/2 ms-64" />
+        </div>
+      </div>
+
+      <div class="flex mb-4 mt-12">
+        <div class="w-1/2 flex justify-center items-center ">
+          <img src="./assets/cll0milet00010tje47uv73nq.png" className="w-1/2" />
+        </div>
+        <div class="w-1/3 mt-5">
+          <div className="flex">
+          <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
+            <p className="text-4xl font-bold ms-3 mt-1">Marketing</p>
+          </div>
+          <div>
+            <p className="mt-8 text-lg ms-16">to boost your digital presence</p>
+            <p className="mt-10 text-lg ms-16">With Eka’s marketing suite you can get a Google my business page, a personal website with appointment support, google review links & more.</p>
+            <button className="btn btn-outline btn-primary mt-16 ms-16">I AM INTERESTED</button>
+          </div>
+
+        </div>
+      </div>
+      {/* <div>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <div className='bg-[#FFF5DB] w-full '>
@@ -376,7 +430,7 @@ export default function ForDoctors() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
     </>
   )
