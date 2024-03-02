@@ -15,8 +15,8 @@ export default function ForDoctors() {
           <li ><a href='/for-doctors'>ForDoctors</a></li>
         </ul>
       </div>
-      <div className="w-full h-auto mt-5 container mx-auto" style={{ zIndex: '-1' }}>
-        <div className="relative p-10 flex flex-col min-w-0 rounded break-words border bg-white border-1 border-white" style={{ borderRadius: "24px", fontFamily: "DM Sans, sans-serif", backgroundColor: "#429CA5", }} >
+      <div className="w-full h-auto mt-5 container mx-auto">
+        <div className="relative p-10 flex flex-col min-w-0 rounded break-words border bg-white border-1 border-white" style={{ borderRadius: "24px", fontFamily: "DM Sans, sans-serif", backgroundColor: "#429CA5", zIndex: '-1' }} >
           <div className="flex md:flex-row flex-col mb-4 ">
             <div className="md:w-1/2 ">
               <p className="text-5xl font-bold  text-white">Personalised practice management for every</p>
@@ -222,9 +222,9 @@ export default function ForDoctors() {
           <img src="./assets/cladow59h003j0sao9o2x4f2b.png" className="w-1/2 " />
         </div>
         <div class="md:w-1/3 mt-5">
-          <div className="flex ms-24">
+          <div className="flex ">
             <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FFF5DB"></rect><path d="M38 16.1226H35V15.1226C35 14.8573 34.8946 14.603 34.7071 14.4155C34.5196 14.2279 34.2652 14.1226 34 14.1226C33.7348 14.1226 33.4804 14.2279 33.2929 14.4155C33.1054 14.603 33 14.8573 33 15.1226V16.1226H23V15.1226C23 14.8573 22.8946 14.603 22.7071 14.4155C22.5196 14.2279 22.2652 14.1226 22 14.1226C21.7348 14.1226 21.4804 14.2279 21.2929 14.4155C21.1054 14.603 21 14.8573 21 15.1226V16.1226H18C17.4696 16.1226 16.9609 16.3333 16.5858 16.7083C16.2107 17.0834 16 17.5921 16 18.1226V38.1226C16 38.653 16.2107 39.1617 16.5858 39.5368C16.9609 39.9118 17.4696 40.1226 18 40.1226H38C38.5304 40.1226 39.0391 39.9118 39.4142 39.5368C39.7893 39.1617 40 38.653 40 38.1226V18.1226C40 17.5921 39.7893 17.0834 39.4142 16.7083C39.0391 16.3333 38.5304 16.1226 38 16.1226ZM38 22.1226H18V18.1226H21V19.1226C21 19.3878 21.1054 19.6421 21.2929 19.8297C21.4804 20.0172 21.7348 20.1226 22 20.1226C22.2652 20.1226 22.5196 20.0172 22.7071 19.8297C22.8946 19.6421 23 19.3878 23 19.1226V18.1226H33V19.1226C33 19.3878 33.1054 19.6421 33.2929 19.8297C33.4804 20.0172 33.7348 20.1226 34 20.1226C34.2652 20.1226 34.5196 20.0172 34.7071 19.8297C34.8946 19.6421 35 19.3878 35 19.1226V18.1226H38V22.1226Z" fill="#EDAE0C"></path></svg>
-            <p className="md:text-4xl text-2xl font-bold  mt-1 md:ms-3 ms-0">Appointments & Reminders</p>
+            <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3 ">Appointments & Reminders</p>
           </div>
           <div>
             <p className="mt-8 text-lg ms-16 ">Simplified schedule management tailor-made for doctors</p>
@@ -235,11 +235,11 @@ export default function ForDoctors() {
         </div>
       </div>
 
-      <div class="flex mb-4 mt-12   justify-center items-center">
-        <div class="w-1/3 mt-5">
+      <div class="flex md:flex-row flex-col mb-4 mt-12   justify-center items-center">
+        <div class="md:w-1/3 mt-5">
           <div className="flex">
           <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FFF4F3"></rect><path d="M41.6876 25.1602C41.6565 25.0204 41.5958 24.8889 41.5095 24.7746C41.4233 24.6603 41.3135 24.5658 41.1876 24.4977L38.2126 22.8477C38.0542 22.5227 37.8792 22.2102 37.6876 21.9102L37.7376 18.5102C37.7387 18.3675 37.7104 18.2262 37.6545 18.095C37.5986 17.9638 37.5162 17.8456 37.4126 17.7477C35.9313 16.4046 34.1795 15.3945 32.2751 14.7852C32.1383 14.7425 31.994 14.7294 31.8518 14.7466C31.7096 14.7639 31.5727 14.8111 31.4501 14.8852L28.5376 16.6352C28.1751 16.6227 27.8251 16.6227 27.4626 16.6352L24.5501 14.8852C24.4274 14.8111 24.2905 14.7639 24.1483 14.7466C24.0061 14.7294 23.8618 14.7425 23.7251 14.7852C21.8181 15.3949 20.0656 16.4098 18.5876 17.7602C18.483 17.8547 18.3999 17.9706 18.3438 18.1C18.2878 18.2293 18.26 18.3692 18.2626 18.5102L18.3251 21.9102C18.1251 22.2102 17.9501 22.5227 17.7751 22.8477L14.8126 24.4977C14.6851 24.5638 14.574 24.6576 14.4875 24.7722C14.401 24.8869 14.3412 25.0194 14.3126 25.1602C13.8875 27.1123 13.8875 29.133 14.3126 31.0852C14.3436 31.2249 14.4043 31.3564 14.4906 31.4707C14.5768 31.585 14.6866 31.6795 14.8126 31.7477L17.7876 33.3977C17.947 33.721 18.1266 34.0341 18.3251 34.3352L18.2626 37.7352C18.2614 37.8778 18.2897 38.0191 18.3456 38.1503C18.4015 38.2815 18.4839 38.3997 18.5876 38.4977C20.0709 39.8379 21.8221 40.8477 23.7251 41.4602C23.8618 41.5028 24.0061 41.5159 24.1483 41.4987C24.2905 41.4815 24.4274 41.4342 24.5501 41.3602L27.4626 39.6102H28.5376L31.4626 41.3602C31.6146 41.4601 31.7931 41.5124 31.9751 41.5102C32.0767 41.5058 32.1775 41.489 32.2751 41.4602C34.182 40.8504 35.9345 39.8355 37.4126 38.4852C37.5171 38.3906 37.6002 38.2747 37.6563 38.1454C37.7124 38.016 37.7401 37.8761 37.7376 37.7352L37.6876 34.3352C37.8751 34.0352 38.0501 33.7227 38.2251 33.3977L41.2001 31.7477C41.3242 31.6788 41.4319 31.5839 41.5161 31.4696C41.6002 31.3553 41.6587 31.2241 41.6876 31.0852C42.1126 29.133 42.1126 27.1123 41.6876 25.1602ZM33.5001 28.1227C33.5001 29.2105 33.1775 30.2738 32.5731 31.1783C31.9688 32.0828 31.1098 32.7877 30.1048 33.204C29.0998 33.6203 27.994 33.7292 26.9271 33.517C25.8602 33.3048 24.8802 32.7809 24.111 32.0117C23.3418 31.2426 22.818 30.2625 22.6057 29.1957C22.3935 28.1288 22.5024 27.0229 22.9187 26.0179C23.335 25.0129 24.0399 24.1539 24.9444 23.5496C25.8489 22.9452 26.9123 22.6227 28.0001 22.6227C29.4587 22.6227 30.8577 23.2021 31.8891 24.2336C32.9206 25.265 33.5001 26.664 33.5001 28.1227Z" fill="#EC6657"></path></svg>
-              <p className="text-4xl font-bold ms-3 mt-1">Personalised & comprehensive Practice Management Tool</p>
+              <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Personalised & comprehensive Practice Management Tool</p>
           </div>
           <div>
             <p className="mt-8 text-lg ms-16">Communicate & connect with your patients</p>
@@ -248,20 +248,20 @@ export default function ForDoctors() {
           </div>
         </div>
 
-        <div class="w-1/2 flex justify-center items-center ">
-          <img src="./assets/cladowucr003l0saocife5im1.png" className="w-1/2 ms-64" />
+        <div class="md:w-1/2 flex justify-center items-center ">
+          <img src="./assets/cladowucr003l0saocife5im1.png" className="w-1/2 md:ms-64 mt-8" />
         </div>
       </div>
 
 
-      <div class="flex mb-4 mt-12">
-        <div class="w-1/2 flex justify-center items-center ">
+      <div class="flex md:flex-row flex-col mb-4 mt-12">
+        <div class="md:w-1/2 flex justify-center items-center ">
           <img src="./assets/cll0milet00010tje47uv73nq.png" className="w-1/2" />
         </div>
-        <div class="w-1/3 mt-5">
+        <div class="md:w-1/3 mt-5">
           <div className="flex">
           <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
-            <p className="text-4xl font-bold ms-3 mt-1">Integrations & Migrations</p>
+            <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Integrations & Migrations</p>
           </div>
           <div>
             <p className="mt-8 text-lg ms-16">Using some other EMR? No problem!</p>
@@ -272,11 +272,11 @@ export default function ForDoctors() {
         </div>
       </div>
 
-      <div class="flex mb-4 mt-12 justify-center items-center">
-        <div class="w-1/3 mt-5">
+      <div class="flex md:flex-row flex-col mb-4 mt-12 justify-center items-center">
+        <div class="md:w-1/3 mt-5">
           <div className="flex">
          <img src="./assets/icon.png" className="w-20 h-16"/>
-              <p className="text-4xl font-bold ms-3 mt-1">Patient connect with Eka patient app</p>
+              <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Patient connect with Eka patient app</p>
           </div>
           <div>
             <p className="mt-8 text-lg ms-16">Communicate & connect with your patients</p>
@@ -286,18 +286,18 @@ export default function ForDoctors() {
         </div>
 
         <div class="w-1/2 flex justify-center items-center ">
-          <img src="./assets/cladoxtz0003p0sao9tvd4yd4.png" className="w-1/2 ms-64" />
+          <img src="./assets/cladoxtz0003p0sao9tvd4yd4.png" className="md:w-1/2 md:ms-64 md:mt-0 mt-8" />
         </div>
       </div>
 
-      <div class="flex mb-4 mt-12">
-        <div class="w-1/2 flex justify-center items-center ">
-          <img src="./assets/cll0milet00010tje47uv73nq.png" className="w-1/2" />
+      <div class="flex md:flex-row flex-col mb-4 mt-12">
+        <div class="md:w-1/2 flex justify-center items-center ">
+          <img src="./assets/cladoy1mf003r0sao6rkv6452.png" className="w-1/2" />
         </div>
-        <div class="w-1/3 mt-5">
+        <div class="md:w-1/3 mt-5">
           <div className="flex">
           <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.122559" width="56" height="56" rx="4" fill="#FDF8FF"></rect><path d="M39 16.1226H21C20.7348 16.1226 20.4804 16.2279 20.2929 16.4155C20.1054 16.603 20 16.8573 20 17.1226C20 17.3878 20.1054 17.6421 20.2929 17.8297C20.4804 18.0172 20.7348 18.1226 21 18.1226H38V35.1226C38 35.3878 38.1054 35.6421 38.2929 35.8297C38.4804 36.0172 38.7348 36.1226 39 36.1226C39.2652 36.1226 39.5196 36.0172 39.7071 35.8297C39.8946 35.6421 40 35.3878 40 35.1226V17.1226C40 16.8573 39.8946 16.603 39.7071 16.4155C39.5196 16.2279 39.2652 16.1226 39 16.1226Z" fill="#A852D0"></path><path d="M35 20.1226H17C16.4477 20.1226 16 20.5703 16 21.1226V39.1226C16 39.6748 16.4477 40.1226 17 40.1226H35C35.5523 40.1226 36 39.6748 36 39.1226V21.1226C36 20.5703 35.5523 20.1226 35 20.1226Z" fill="#A852D0"></path></svg>
-            <p className="text-4xl font-bold ms-3 mt-1">Marketing</p>
+            <p className="md:text-4xl text-2xl font-bold  mt-1 ms-3">Marketing</p>
           </div>
           <div>
             <p className="mt-8 text-lg ms-16">to boost your digital presence</p>
