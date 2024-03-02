@@ -62,9 +62,10 @@ const Footer = () => {
         <div className="footer-container-main h-full w-full text-white flex flex-col md:pt-12">
           <div className="footer-container h-full container mx-auto sm:px-4 flex flex-col">
             <div className="w-full md:hidden pt-4 flex justify-center items-center">
-              <img src="../../Footer/assets/facebook.svg" alt="MediCard" />
+              <img 
+                src="./logo/L2.png" alt="MediCard" className="h-64 w-70" />
             </div>
-            <div className="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 w-full overflow-hidden p-0 text-center flex-grow-1 flex justify-center items-center">
+            <div className="container  max-w-full mx-auto sm:px-4 w-full overflow-hidden p-0 text-center flex-grow-1 flex justify-center items-center">
               <div className="flex flex-wrap  h-full w-full">
                 <div className="w-full xl:w-3/5 pr-4 pl-4 p-0 flex gap-3">
                   <div className="footer-card-container px-2 pt-4">
