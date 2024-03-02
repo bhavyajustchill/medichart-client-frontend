@@ -7,9 +7,9 @@ export default function Mission() {
                 <p className="md:text-md text-sm">THE ULTIMATE GOAL</p>
             </div>
 
-            <p className='font-bold text-4xl text-center mt-8'>Eka's Mission</p>
+            <p className='font-bold text-4xl text-center mt-8'>MCHA Mission</p>
 
-            <div className="flex md:flex-row flex-col mb-4 mt-8 ms-20">
+            <div className="flex md:flex-row flex-col mb-4 mt-8 ms-36">
 
                 <div className="md:w-1/3 md:mt-0 mt-5">
                     <div className="card w-96  shadow-2xl bg-primary">

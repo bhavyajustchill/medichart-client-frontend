@@ -2,11 +2,7 @@
 
 export default function navItems() {
   return [
-    {
-      link: "/for-doctors",
-      label: "For Doctors",
-      type:'ghost',
-    },
+ 
     {
       label: "ABDM",
       subItems: [

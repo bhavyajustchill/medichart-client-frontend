@@ -42,9 +42,9 @@ export default function Healthaccountcard() {
     ];
 
     return (
-        <div className="flex flex-wrap justify-center">
+        <div className="flex md:flex-row flex-col flex-wrap justify-center">
             {cardData.map((item, index) => (
-                <div key={index} className="w-full  sm:w-1/2 md:w-1/3 lg:w-1/3 p-12">
+                <div key={index} className="w-full  md:w-1/3 lg:w-1/3 p-12">
                     <div className={`card bg-${item.bgColor}  h-[110%] shadow-2xl mb-4`}>
                         <div className="card-body">
                             <h2 className="card-title text-2xl font-bold">{item.title}</h2>
