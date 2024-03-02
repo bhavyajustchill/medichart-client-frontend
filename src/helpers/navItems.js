@@ -7,7 +7,7 @@
 //     {
 //       link: "/ABDM",
 //       label: "ABDM",
-      
+
 //     },
 //     {
 //       link: "/Covid 19",
@@ -25,14 +25,14 @@ export default function navItems() {
     {
       link: "/",
       label: "For Doctors",
-      type:'ghost',
+      type: "ghost",
     },
     {
       label: "ABDM",
       subItems: [
         {
           link: "/ABDM",
-          label: "Create ABHA",
+          label: "Create MCHA",
         },
         {
           link: "/ABDM/about",
@@ -42,7 +42,7 @@ export default function navItems() {
           link: "/ABDM/contact",
           label: "About PMJAY",
         },
-      ]
+      ],
     },
     {
       link: "/Covid19",
@@ -68,8 +68,7 @@ export default function navItems() {
           link: "/Covid19/contact",
           label: "About CoWIN",
         },
-       
-      ]
+      ],
     },
     {
       link: "/About",
@@ -87,7 +86,7 @@ export default function navItems() {
           link: "/About/contact",
           label: "Carees",
         },
-      ]
-    }
+      ],
+    },
   ];
 }

@@ -37,7 +37,7 @@ const footerCardData = [
   },
   {
     title: "ABDM",
-    list: [{ label: "Create ABHA", link: "#" }],
+    list: [{ label: "Create MCHA", link: "#" }],
   },
   {
     title: "About Us",
@@ -57,16 +57,11 @@ const svgAttributes = {
 const Footer = () => {
   return (
     <>
-    
       <div className="h-auto" style={{ background: "#232477" }}>
         <div className="footer-container-main h-full w-full text-white flex flex-col md:pt-12">
           <div className="footer-container h-full container mx-auto sm:px-4 flex flex-col">
             <div className="w-full md:hidden pt-4 flex justify-center items-center">
-              <img
-
-                src="../../Footer/assets/facebook.svg"
-                alt="medichart"
-              />
+              <img src="../../Footer/assets/facebook.svg" alt="medichart" />
             </div>
             <div className="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 w-full overflow-hidden p-0 text-center flex-grow-1 flex justify-center items-center">
               <div className="flex flex-wrap  h-full w-full">
@@ -166,7 +161,6 @@ const Footer = () => {
             </div>
             <div className="footer-line hidden lg:block "></div>
             <div className="footer-navigation flex flex-col md:flex-row">
-
               <div className="order-2 md:order-1 h-full flex justify-center items-center footer-navigation-copyright w-full flex justify-center text-center">
                 Copyright © 2023 medichart.com
               </div>
