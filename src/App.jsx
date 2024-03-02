@@ -11,6 +11,7 @@ import Register from "./pages/Register";
 import HealthID from "./pages/HealthID";
 import MedicalHistory from "./pages/MedicalHistory";
 import MediCard from "./pages/MediCard";
+import HealthAnalytics from "./pages/HealthAnalytics";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="health-id" element={<HealthID />} index />
           <Route path="MedicalHistory" element={<MedicalHistory />} index />
           <Route path="MediCard" element={<MediCard />} index />
+          <Route path="HealthAnalytics" element={<HealthAnalytics />} index />
         </Route>
         <Route path="/auth" exact element={<AuthLayout />}>
           <Route path="login" index element={<Login />} />
