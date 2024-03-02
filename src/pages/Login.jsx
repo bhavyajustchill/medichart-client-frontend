@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./Loader.css"; // Import the CSS file for the loader
 
 export default function Login() {
   const BASE_URL = "https://medichart-backend.vercel.app";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false); // Add loading state
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,6 +25,7 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading to true when logging in
     await axios
       .post(BASE_URL + "/auth/login", { email: email, password: password })
       .then((response) => {
@@ -37,9 +40,11 @@ export default function Login() {
       .catch((error) => {
         console.log(error);
         alert("Invalid Credentials!");
+      })
+      .finally(() => {
+        setLoading(false); // Set loading to false after login attempt
       });
   };
-
   return (
     <>
       <div
@@ -135,10 +140,11 @@ export default function Login() {
                 <button
                   type="submit"
                   className=" text-white  hover:bg-blue-400 bg-blue-400 w-full h-8 rounded-xl"
+                  disabled={loading} // Disable button when loading
                 >
-                  Login
+                  {loading ? <div className="loader"></div> : "Login"}{" "}
+                  {/* Display loader when loading */}
                 </button>
-
                 <p className="text-xs mt-2 text-blue-400">
                   <a href="/auth/register">Create Account</a>
                 </p>
