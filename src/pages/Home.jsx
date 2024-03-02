@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
 
-      <div className="text-sm breadcrumbs bg-[#F1F1FF] -mt-20">
+      <div className="text-sm breadcrumbs bg-[#F1F1FF] ">
         <ul>
           <li className="ms-12">
             <a>Home</a>
