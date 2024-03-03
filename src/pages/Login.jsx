@@ -104,7 +104,7 @@ export default function Login() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter Password"
-                className="input w-full border mt-1 h-10 border-blue-400"
+                className="input w-full border mt-5 h-10 border-blue-400"
               />
               <div className="pt-8">
                 <button
