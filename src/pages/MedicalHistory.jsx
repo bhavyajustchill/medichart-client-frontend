@@ -194,7 +194,7 @@ export default function MedicalHistory() {
             <hr className="mt-5" />
 
             <button
-              className="btn bg-primary text-white rounded-2xl mt-3"
+              className="btn bg-primary text-white rounded-2xl mt-3 hover:text-black"
               disabled={!isContinueEnabled}
               onClick={handleContinue}
             >
