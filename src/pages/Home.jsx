@@ -10,7 +10,7 @@ import Mission from './Mission';
 
 
 export default function Home() {
-  const [imageSrc, setImageSrc] = useState('/assets/image12.jpg');
+  const [imageSrc, setImageSrc] = useState('/assets/image12.png');
   const changeImage = (newSrc) => {
     setImageSrc(newSrc);
   };

@@ -180,12 +180,32 @@ function HealthID() {
               </div>
 
               <input type="file" onChange={handleFileChange} />
+<<<<<<< HEAD
+              <div className="pt-8">
+                <button
+                  type="submit"
+                  className="text-white hover:bg-blue-400 bg-blue-400 w-full h-10git rounded-xl relative"
+                  disabled={loading} // Disable button when loading
+                >
+                  {loading && (
+                    <div className="loader-container">
+                      <div className="loader"></div>
+                    </div>
+                  )}
+                  {!loading && "Login"}
+                </button>
+                <p className="text-xs mt-2 text-blue-400">
+                  <a href="/auth/register">Create Account</a>
+                </p>
+              </div>
+=======
               <button
                 onClick={handleSubmit}
                 className="btn btn-accent text-white rounded-2xl text-lg mt-5"
               >
                 Submit
               </button>
+>>>>>>> dcb0286c119ed1bfe3f144df0d0ef037c3ba0660
             </div>
           </div>
         </div>
