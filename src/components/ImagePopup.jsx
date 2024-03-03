@@ -5,7 +5,7 @@ export default function ImagePopup(props) {
     return (
         <>
             <>
-                <div className='p-12'>
+                <div>
                     <div className="box ">
                         <a  className="btn btn-accent background-link" style={{backgroundImage:`url("${imgUrl}")`, backgroundSize:'cover', width:90, height:90}} href="#popup1">
                             

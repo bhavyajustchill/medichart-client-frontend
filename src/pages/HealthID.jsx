@@ -1,132 +1,128 @@
 import React, { useState } from "react";
-import "./Loader.css"; // Import the CSS file
 
 function HealthID() {
-  const [inputValue, setInputValue] = useState("");
-  const [tags, setTags] = useState([]);
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [documentDate, setDocumentDate] = useState("");
-  const [typeOfRecord, setTypeOfRecord] = useState("");
-  const [loading, setLoading] = useState(false);
+    const [inputValue, setInputValue] = useState("");
+    const [tags, setTags] = useState([]);
+    const [selectedFile, setSelectedFile] = useState(null);
+    const [documentDate, setDocumentDate] = useState("");
+    const [typeOfRecord, setTypeOfRecord] = useState("");
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    };
 
-  const handleInputKeyPress = (e) => {
-    if (e.key === "Enter" || e.key === ",") {
-      e.preventDefault();
-      addTag();
-    }
-  };
-
-  const addTag = () => {
-    const trimmedValue = inputValue.trim();
-    if (trimmedValue !== "" && !tags.includes(trimmedValue)) {
-      setTags([...tags, trimmedValue]);
-      setInputValue("");
-    }
-  };
-
-  const removeTag = (tag) => {
-    setTags(tags.filter((t) => t !== tag));
-  };
-
-  const handleFileChange = (event) => {
-    setSelectedFile(event.target.files[0]);
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    if (!selectedFile) {
-      alert("Please select a file");
-      return;
-    }
-
-    const userid = JSON.parse(localStorage.getItem("userData"))._id;
-
-    // Construct FormData object
-    const formData = new FormData();
-    formData.append("file", selectedFile);
-    formData.append("userId", userid);
-    formData.append("documentDate", documentDate); // Assuming you have 'documentDate' state
-    formData.append("typeOfRecord", typeOfRecord); // Assuming you have 'typeOfRecord' state
-    tags.forEach((tag) => formData.append("tags[]", tag)); // Append each tag as an array element
-
-    try {
-      setLoading(true); // Set loading to true when data is being sent
-      const response = await fetch(
-        "https://medichart-backend.vercel.app/health-records",
-        {
-          method: "POST",
-          body: formData,
+    const handleInputKeyPress = (e) => {
+        if (e.key === "Enter" || e.key === ",") {
+            e.preventDefault();
+            addTag();
         }
-      );
+    };
 
-      if (!response.ok) {
-        throw new Error("Failed to upload file");
-      }
+    const addTag = () => {
+        const trimmedValue = inputValue.trim();
+        if (trimmedValue !== "" && !tags.includes(trimmedValue)) {
+            setTags([...tags, trimmedValue]);
+            setInputValue("");
+        }
+    };
 
-      // File uploaded successfully
-      alert("File uploaded successfully");
-    } catch (error) {
-      console.error("Error uploading file:", error.message);
-    } finally {
-      setLoading(false); // Set loading to false after request is complete
-    }
-  };
+    const removeTag = (tag) => {
+        setTags(tags.filter((t) => t !== tag));
+    };
 
-  return (
-    <>
-      <div className="text-sm breadcrumbs bg-[#F1F1FF] flex">
+    const handleFileChange = (event) => {
+        setSelectedFile(event.target.files[0]);
+    };
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        if (!selectedFile) {
+            alert("Please select a file");
+            return;
+        }
+
+        const userid = JSON.parse(localStorage.getItem("userData"))._id;
+
+        // Construct FormData object
+        const formData = new FormData();
+        formData.append("file", selectedFile);
+        formData.append("userId", userid);
+        formData.append("documentDate", documentDate); // Assuming you have 'documentDate' state
+        formData.append("typeOfRecord", typeOfRecord); // Assuming you have 'typeOfRecord' state
+        tags.forEach((tag) => formData.append("tags[]", tag)); // Append each tag as an array element
+
+        try {
+            const response = await fetch(
+                "https://medichart-backend.vercel.app/health-records",
+                {
+                    method: "POST",
+                    body: formData,
+                }
+            );
+
+            if (!response.ok) {
+                throw new Error("Failed to upload file");
+            }
+
+            // File uploaded successfully
+            console.log("File uploaded successfully");
+        }
+        catch (error) {
+            console.error("Error uploading file:", error.message);
+        }
+    };
+
+
+    return (
+        <>
+        <div className="text-sm breadcrumbs bg-[#F1F1FF] flex">
         <ul className="md:ms-12 ms-5 md:text-sm text-xs">
-          <li>
-            <a href="/" className="text-[#7265E3]">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/" className="text-[#7265E3]">
-              MCHA
-            </a>
-          </li>
-          <li>Create Medi-Chart Health ID</li>
+        <li>
+        <a href="/" className="text-[#7265E3]">
+        Home
+        </a>
+        </li>
+        <li>
+        <a href="/" className="text-[#7265E3]">
+        MCHA
+        </a>
+        </li>
+        <li>Create Medi-Chart Health ID</li>
         </ul>
         <ul className="flex-1 justify-end text-[#AFB1C9] md:text-sm text-xs">
-          Last Updated ON:{" "}
-          <span className="text-[#4C5980] font-bold">26 FEB, 2024</span>
+        Last Updated ON: { " " }
+        <span className="text-[#4C5980] font-bold">26 FEB, 2024</span>
         </ul>
-      </div>
+        </div>
 
-      <div className="flex md:flex-row flex-col mb-4 p-16">
+        <div className="flex md:flex-row flex-col mb-4 p-16">
         <div className="md:w-1/2 ">
-          <p className="md:text-4xl text-2xl font-medium text-primary">
-            Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN
-          </p>
+        <p className="md:text-4xl text-2xl font-medium text-primary">
+        Medi-Chart Health Account or Health ID Card Approved by NDHM.GOV.IN
+        </p>
 
-          <p className="mt-5 md:text-xl text-sm">
-            Medi-Chart or Health ID is an initiative of the Indian government
-            under the Medi-Chart Digital Mission (MCDM) for Indian citizens to
-            establish a centralised database of all their health-related data.
-          </p>
+        <p className="mt-5 md:text-xl text-sm">
+        Medi-Chart or Health ID is an initiative of the Indian government
+        under the Medi-Chart Digital Mission (MCDM) for Indian citizens to
+        establish a centralised database of all their health-related data.
+        </p>
 
-          <p className="mt-5 font-medium md:text-2xl text-xl">
-            It is crucial to remember that
-          </p>
+        <p className="mt-5 font-medium md:text-2xl text-xl">
+        It is crucial to remember that
+        </p>
 
-          <p className="mt-5 md:text-xl text-sm">
-            The health records associated with Health IDs or MCDM numbers can
-            only be accessed with the informed consent of the individual.
-          </p>
+        <p className="mt-5 md:text-xl text-sm">
+        The health records associated with Health IDs or MCDM numbers can
+        only be accessed with the informed consent of the individual.
+        </p>
 
-          <p className="mt-5 md:text-xl text-smxl">
-            People have the option to create an alias, referred to as an "MCDM
+        <p className="mt-5 md:text-xl text-smxl">
+        People have the option to create an alias, referred to as an "MCDM
             address" (similar to the email ID xyz@ndhm with a password).
-          </p>
+        </p>
 
-          <p className="mt-5 md:text-xl text-smxl">
-            Highly secure & private, data sharing happens only with the user’s
+        <p className="mt-5 md:text-xl text-smxl">
+        Highly secure & private, data sharing happens only with the user’s
             consent
           </p>
         </div>
@@ -184,6 +180,7 @@ function HealthID() {
               </div>
 
               <input type="file" onChange={handleFileChange} />
+<<<<<<< HEAD
               <div className="pt-8">
                 <button
                   type="submit"
@@ -201,6 +198,14 @@ function HealthID() {
                   <a href="/auth/register">Create Account</a>
                 </p>
               </div>
+=======
+              <button
+                onClick={handleSubmit}
+                className="btn btn-accent text-white rounded-2xl text-lg mt-5"
+              >
+                Submit
+              </button>
+>>>>>>> dcb0286c119ed1bfe3f144df0d0ef037c3ba0660
             </div>
           </div>
         </div>
