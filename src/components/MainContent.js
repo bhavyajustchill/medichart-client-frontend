@@ -1,10 +1,8 @@
 
 
-import React, { useState, useRef } from 'react';
+import React, { useState,useRef } from 'react';
 import QrCodeGenerator from './QRCode ';
 import { useReactToPrint } from 'react-to-print';
-import ReactToPrint from 'react-to-print';
-import PrintCard from './PrintCard';
 
 
 
@@ -19,9 +17,9 @@ const MainContent = ({ selectedItem }) => {
   const [state, setState] = useState('Gujarat');
   const [pincode, setPincode] = useState('360004');
 
+  
 
-
-
+ 
 
   const jsonData = {
     "name": "Shahnawaz bheda",
@@ -60,10 +58,6 @@ const MainContent = ({ selectedItem }) => {
 
       {selectedItem === 'Medi Card' && (
         <>
-          <ReactToPrint
-            trigger={() => <button>Generate PDF</button>}
-            content={() => <PrintCard />}
-          />
           <div className='flex justify-center mt-12' style={{ fontFamily: 'Fredoka One' }}>
             <div className="flip-card ">
               <div className="flip-card-inner">

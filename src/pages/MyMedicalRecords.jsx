@@ -49,7 +49,7 @@ const MyMedicalRecords = ({ records }) => {
                             <td>{record.userId}</td>
                             <td>{record.documentDate}</td>
                             <td>{record.tags.join(', ')}</td>
-                            <td><a href={record.fileUrl} target="_blank" rel="noopener noreferrer">View Document</a>
+                            <td>
                             <ImagePopup imgUrl={record.fileUrl} />
                             </td>
                         </tr>

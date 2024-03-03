@@ -15,12 +15,9 @@ import HealthAnalytics from "./pages/HealthAnalytics";
 import MyMedicalRecords from "./pages/MyMedicalRecords";
 import HealthAnalyticsRecords from "./components/HealthAnalyticsRecords";
 import ImagePopup from "./components/ImagePopup";
-import PrintCard from "./components/PrintCard";
-
+import PatientHealthRecords from "./pages/PatientHealthRecords";
 
 function App() {
-  
-
   return (
     <BrowserRouter>
       <Routes>
@@ -33,16 +30,22 @@ function App() {
           <Route path="MedicalHistory" element={<MedicalHistory />} index />
           <Route path="MediCard" element={<MediCard />} index />
           <Route path="HealthAnalytics" element={<HealthAnalytics />} index />
-          <Route path="HealthAnalyticsRecords" element={<HealthAnalyticsRecords />} index />
+          <Route
+            path="HealthAnalyticsRecords"
+            element={<HealthAnalyticsRecords />}
+            index
+          />
           <Route path="ImagePopup" element={<ImagePopup />} index />
-          <Route path="PrintCard" element={<PrintCard />} index />
-          
-          
         </Route>
         <Route path="/auth" exact element={<AuthLayout />}>
           <Route path="login" index element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
+        <Route
+          path="patient-health-records/:userId"
+          element={<PatientHealthRecords />}
+          index
+        />
       </Routes>
     </BrowserRouter>
   );

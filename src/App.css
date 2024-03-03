@@ -163,14 +163,12 @@
   
   
   .box {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     background: rgba(255,255,255,0.2);
-    padding: 35px;
     border: 2px solid #fff;
     border-radius: 20px/50px;
     background-clip: padding-box;
-    text-align: center;
   }
   
   
@@ -235,115 +233,3 @@
 
 
 
-
-  /* styles.css */
-
-/* Global styles */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Component-specific styles */
-#divToPrint {
-  font-family: 'Fredoka One', sans-serif;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.p-12 {
-  padding: 3rem;
-}
-
-.rounded-xl {
-  border-radius: 1rem;
-}
-
-.shadow-xl {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.w-1/2 {
-  width: 50%;
-}
-
-.w-1/3 {
-  width: 33.333333%;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.text-white {
-  color: #fff;
-}
-
-.text-black {
-  color: #000;
-}
-
-.text-gray-600 {
-  color: #666;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.ms-4 {
-  margin-left: 1rem;
-}
-
-.ms-48 {
-  margin-left: 12rem;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-/* Add any additional styles as needed */
