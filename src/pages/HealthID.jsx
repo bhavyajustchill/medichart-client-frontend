@@ -187,7 +187,7 @@ function HealthID() {
               <div className="pt-8">
                 <button
                   type="submit"
-                  className="text-white hover:bg-blue-400 bg-blue-400 w-full h-10git  rounded-xl relative"
+                  className="text-white hover:bg-blue-400 bg-blue-400 w-full h-10git rounded-xl relative"
                   disabled={loading} // Disable button when loading
                 >
                   {loading && (

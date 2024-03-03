@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Checkbox from "../components/Checkbox ";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export default function MedicalHistory() {
+  const BASE_URL = "https://medichart-backend.vercel.app";
   const CheckBoxData = [
     {
       label: "Diabetes",
@@ -83,58 +85,56 @@ export default function MedicalHistory() {
     },
   ];
 
-  const [checkboxes, setCheckboxes] = useState({
-    Diabetes: false,
-    Thyroid: false,
-  });
-
-  const [checkboxesUser, setCheckboxesUser] = useState({
-    Allergy: false,
-    Cholesterol: false,
-    Arthritis: false,
-    Digestive: false,
-    BloodPressure: false,
-    Kidney: false,
-    Liver: false,
-    Vision: false,
-    Other: false,
-  });
-
+  const [checkboxes, setCheckboxes] = useState({});
+  const [checkboxesUser, setCheckboxesUser] = useState({});
   const [isContinueEnabled, setIsContinueEnabled] = useState(false);
-
-  const handleCheckboxChange = (option) => {
-    setCheckboxes((prevCheckboxes) => ({
-      ...prevCheckboxes,
-      [option]: !prevCheckboxes[option],
-    }));
-
-    setIsContinueEnabled(
-      Object.values({ ...checkboxes, [option]: !checkboxes[option] }).includes(
-        true
-      ) && Object.values(checkboxesUser).includes(true)
-    );
-  };
-
-  const handleCheckboxChangeUser = (option) => {
-    setCheckboxesUser((prevCheckboxes) => ({
-      ...prevCheckboxes,
-      [option]: !prevCheckboxes[option],
-    }));
-
-    setIsContinueEnabled(
-      Object.values({
-        ...checkboxesUser,
-        [option]: !checkboxesUser[option],
-      }).includes(true) && Object.values(checkboxes).includes(true)
-    );
-  };
-
   const navigate = useNavigate();
 
-  const handleContinue = () => {
-    navigate("/MediCard");
+  const userId = JSON.parse(localStorage.getItem("userData"))._id;
+
+  const handleCheckboxChange = (option, isChecked) => {
+    setCheckboxes((prevCheckboxes) => ({
+      ...prevCheckboxes,
+      [option]: isChecked,
+    }));
+    checkContinueEnabled();
   };
 
+  const handleCheckboxChangeUser = (option, isChecked) => {
+    setCheckboxesUser((prevCheckboxes) => ({
+      ...prevCheckboxes,
+      [option]: isChecked,
+    }));
+    checkContinueEnabled();
+  };
+
+  const checkContinueEnabled = () => {
+    setIsContinueEnabled(
+      Object.values(checkboxes).includes(true) &&
+        Object.values(checkboxesUser).includes(true)
+    );
+  };
+
+  const handleContinue = async () => {
+    const selfMedicalHistory = Object.entries({
+      ...checkboxes,
+      ...checkboxesUser,
+    })
+      .filter(([key, value]) => value)
+      .map(([key]) => key);
+
+    try {
+      await axios.post(`${BASE_URL}/medical-history/`, {
+        userId,
+        selfMedicalHistory,
+      });
+
+      // Redirect to the next page after successful submission
+      navigate("/next-page");
+    } catch (error) {
+      console.error("Error submitting medical history:", error);
+    }
+  };
   return (
     <>
       <div className="flex justify-center items-center md:p-0 p-12">
@@ -206,3 +206,4 @@ export default function MedicalHistory() {
     </>
   );
 }
+  
