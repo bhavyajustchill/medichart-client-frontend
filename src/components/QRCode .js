@@ -5,7 +5,7 @@ export default function QrCodeGenerator(props) {
   const { jsonData } = props;
   return (
     <>
-      <QRCode value={JSON.stringify(jsonData)} />
+      <QRCode value={jsonData} />
     </>
   );
 }
