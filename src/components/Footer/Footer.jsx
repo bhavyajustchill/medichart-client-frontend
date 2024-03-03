@@ -10,43 +10,25 @@ const footerCardData = [
   {
     title: "About",
     list: [
-      { label: "Home" },
-      { label: "Terms and Conditions", link: "#" },
-      { label: "Privacy Policy", link: "#" },
-      { label: "Google Api Disclosure", link: "#" },
-      { label: "Security", link: "#" },
+      { label: "Home", link: "/" },
+      
     ],
   },
   {
     title: "Products",
     list: [
-      { label: "For Doctors", link: "#" },
-      { label: "MediCard EMR", link: "#" },
-
-      { label: "GMB For Doctors", link: "#" },
-      { label: "EMR for Neurologists", link: "#" },
+      { label: "For Doctors", link: "/for-doctors" },
+      { label: "MediCard EMR", link: "/MediCard" },
     ],
   },
   {
     title: "Cowin",
     list: [
-      { label: "Book Vaccination Slot", link: "#" },
-      { label: "Download Vaccination Certificate", link: "#" },
-      { label: "Change Mobile Number", link: "#" },
-      { label: "Add Passport Details", link: "#" },
+      
+      { label: "Download Medi Card", link: "/PrintCard" },
+
     ],
-  },
-  {
-    title: "MCHA",
-    list: [{ label: "Create MCHA", link: "#" }],
-  },
-  {
-    title: "About Us",
-    list: [
-      { label: "Team", link: "#" },
-      { label: "MediCard Stories", link: "#" },
-    ],
-  },
+  }
 ];
 
 const svgAttributes = {

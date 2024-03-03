@@ -96,7 +96,7 @@ const MainContent = ({ selectedItem }) => {
                         </div>
                       </div>
                       <div className="w-1/2 flex justify-center mt-5 ">
-                        <QrCodeGenerator jsonData={jsonData} />
+                        <QrCodeGenerator jsonData={`https://medichart-client-frontend.vercel.app/patient-health-records/${JSON.parse(localStorage.getItem('userData'))._id}`} />
                       </div>
                     </div>
                     <div className="flex  ms-48">
