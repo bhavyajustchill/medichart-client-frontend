@@ -81,7 +81,7 @@ export default function Header() {
                   <Link to={navItem.link}>{navItem.label}</Link>
                 </button>
               ) : (
-                <button className="btn btn-primary btn-sm">
+                <button className="btn btn-default border-none btn-sm">
                   <Link to={navItem.link}>{navItem.label}</Link>
                 </button>
               )}
