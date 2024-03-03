@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import MainContent from '../components/MainContent';
 
-const App = () => {
+const MediCard = () => {
   const [selectedItem, setSelectedItem] = useState('Medi Card');
 
   const handleSelectItem = (item) => {
@@ -18,4 +18,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MediCard;

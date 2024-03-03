@@ -15,6 +15,7 @@ import HealthAnalytics from "./pages/HealthAnalytics";
 import MyMedicalRecords from "./pages/MyMedicalRecords";
 import HealthAnalyticsRecords from "./components/HealthAnalyticsRecords";
 import ImagePopup from "./components/ImagePopup";
+import PrintCard from "./components/PrintCard";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="HealthAnalytics" element={<HealthAnalytics />} index />
           <Route path="HealthAnalyticsRecords" element={<HealthAnalyticsRecords />} index />
           <Route path="ImagePopup" element={<ImagePopup />} index />
+          <Route path="PrintCard" element={<PrintCard />} index />
           
           
         </Route>
