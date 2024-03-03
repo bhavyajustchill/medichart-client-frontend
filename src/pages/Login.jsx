@@ -55,33 +55,8 @@ export default function Login() {
         <div className="card lg:card-side bg-base-100 shadow-2xl md:w-1/2 md:h-80  ">
           <figure className="md:w-1/2 ">
             <div className=" carousel ">
-              <div className="carousel-item w-full">
-                <img
-                  src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-                  className="w-full"
-                  alt="Tailwind CSS Carousel component"
-                />
-              </div>
-              <div className="carousel-item w-full">
-                <img
-                  src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-                  className="w-full"
-                  alt="Tailwind CSS Carousel component"
-                />
-              </div>
-              <div className="carousel-item w-full">
-                <img
-                  src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-                  className="w-full"
-                  alt="Tailwind CSS Carousel component"
-                />
-              </div>
-              <div className="carousel-item w-full">
-                <img
-                  src="https://img.freepik.com/free-photo/athlete-running-training_342744-394.jpg?w=996&t=st=1709437409~exp=1709438009~hmac=0425970897986eef6ca4199f98fe2d843ff37dc8a1b6aca3616a12d1d14aa548"
-                  alt="Tailwind CSS Carousel component"
-                />
-              </div>
+
+
               <div className="carousel-item w-full">
                 <img
                   src="https://img.freepik.com/free-vector/tiny-cardiology-doctor-nurse-examining-heart-blood-pressure-prescribing-treatment-medical-cardiovascular-checkup-flat-vector-illustration-anatomy-hospital-heart-diseases-health-care-concept_74855-20963.jpg?t=st=1709437481~exp=1709441081~hmac=64b50fedd194899e267e62dae4c4dba600c5d22559df35f77484a7aa505cf735&w=996"
@@ -89,6 +64,7 @@ export default function Login() {
                   alt="Tailwind CSS Carousel component"
                 />
               </div>
+
               <div className="carousel-item w-full">
                 <img
                   src="https://img.freepik.com/free-photo/athlete-running-training_342744-394.jpg?w=996&t=st=1709437409~exp=1709438009~hmac=0425970897986eef6ca4199f98fe2d843ff37dc8a1b6aca3616a12d1d14aa548"
