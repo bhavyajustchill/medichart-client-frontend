@@ -78,28 +78,27 @@ export default function Login() {
               </div>
               <div className="carousel-item w-full">
                 <img
-                  src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
+                  src="https://img.freepik.com/free-photo/athlete-running-training_342744-394.jpg?w=996&t=st=1709437409~exp=1709438009~hmac=0425970897986eef6ca4199f98fe2d843ff37dc8a1b6aca3616a12d1d14aa548"
+                  alt="Tailwind CSS Carousel component"
+                />
+              </div>
+              <div className="carousel-item w-full">
+                <img
+                  src="https://img.freepik.com/free-vector/tiny-cardiology-doctor-nurse-examining-heart-blood-pressure-prescribing-treatment-medical-cardiovascular-checkup-flat-vector-illustration-anatomy-hospital-heart-diseases-health-care-concept_74855-20963.jpg?t=st=1709437481~exp=1709441081~hmac=64b50fedd194899e267e62dae4c4dba600c5d22559df35f77484a7aa505cf735&w=996"
                   className="w-full"
                   alt="Tailwind CSS Carousel component"
                 />
               </div>
               <div className="carousel-item w-full">
                 <img
-                  src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+                  src="https://img.freepik.com/free-photo/athlete-running-training_342744-394.jpg?w=996&t=st=1709437409~exp=1709438009~hmac=0425970897986eef6ca4199f98fe2d843ff37dc8a1b6aca3616a12d1d14aa548"
                   className="w-full"
                   alt="Tailwind CSS Carousel component"
                 />
               </div>
               <div className="carousel-item w-full">
                 <img
-                  src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-                  className="w-full"
-                  alt="Tailwind CSS Carousel component"
-                />
-              </div>
-              <div className="carousel-item w-full">
-                <img
-                  src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+                  src="https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191355.jpg?w=996&t=st=1709437222~exp=1709437822~hmac=7454c72df356cf2eb201751e016e42bff44039bbc3116a14338ca6ef3c72e855 "
                   className="w-full"
                   alt="Tailwind CSS Carousel component"
                 />
