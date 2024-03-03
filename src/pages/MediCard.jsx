@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar';
 import MainContent from '../components/MainContent';
 
 const App = () => {
-  const [selectedItem, setSelectedItem] = useState('');
+  const [selectedItem, setSelectedItem] = useState('Medi Card');
 
   const handleSelectItem = (item) => {
     setSelectedItem(item);

@@ -9,8 +9,10 @@ export default function MainLayout() {
     <div className="drawer h-dvh">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
-        <Header />
-        <div className=" my-1 pt-20">
+        <div className="shadow-md">
+          <Header />
+        </div>
+        <div >
           <Outlet />
         </div>
         <Footer />

@@ -8,4 +8,15 @@ module.exports = {
   daisyui: {
     themes: ["corporate"],
   },
+  daisyui:{
+    themes:[
+      {
+        mytheme:{
+          "primary":"#64E3FB",
+          "accent" : "#00ffff",
+          "success": "#00ff00",
+        }
+      }
+    ]
+  }
 };
