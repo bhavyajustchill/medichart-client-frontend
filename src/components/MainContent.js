@@ -111,7 +111,11 @@ const MainContent = ({ selectedItem }) => {
                         </div>
                       </div>
                       <div className="w-1/2 flex justify-center mt-5 ">
-                        <QrCodeGenerator jsonData={`https://medichart-client-frontend.vercel.app/patient-health-records/${JSON.parse(localStorage.getItem('userData'))._id}`} />
+                        <QrCodeGenerator
+                          jsonData={`https://medichart-client-frontend.vercel.app/patient-health-records/${
+                            JSON.parse(localStorage.getItem("userData"))._id
+                          }`}
+                        />
                       </div>
                     </div>
                     <div className="flex  ms-48">
@@ -126,9 +130,7 @@ const MainContent = ({ selectedItem }) => {
                           <p className="text-gray-600">
                             Date of birth/જન્મ તારીખ{" "}
                           </p>
-                          <p className="text-black text-xl">
-                            {userData.dob.toString()}
-                          </p>
+                          <p className="text-black text-xl">{userData.dob}</p>
                         </div>
                       </div>
                       <div className="w-1/2 ">
